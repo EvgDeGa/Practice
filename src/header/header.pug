@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+html(lang="en")
+    head
+
+        script(type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js")
+    header
+        block content
+            img(src="../image/Logo.svg")
+            ul.class
+                each val in ['О нас', 'Услуги', 'Вакансии', 'Новости', 'Соглашения', 'Войти', 'Зарегестрирваться']
+                    if( val === 'Войти')
+                        li.sing_in: a(href="")= val
+                    else if(val === 'Зарегестрирваться')
+                        li.log_in: a(href="")= val
+                    else if(val === 'Услуги')||((val === 'Соглашения'))
+                        div.container
+                            li.drop_down= val
+                            ul
+                                li sdfsdfd
+                    else
+                        li: a(href="")= val
+
+            script(src='./header/header.js')
+

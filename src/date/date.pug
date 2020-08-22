@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+html(lang="en")
+    //script(src="https://ajax.aspnetcdn.com/ajax/jquery.ui/1.10.4/jquery-ui.min.js")
+    script(type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js")
+    body
+        div.date
+            div.month_year
+                img(src="../image/arrow_back_purple.svg" id='back')
+                p(id='month') Месяц
+                img(src="../image/arrow_forward_purple.svg")
+            div.week_day
+                ul
+                    li Пн
+                    li Вт
+                    li Ср
+                    li Чт
+                    li Пт
+                    li Сб
+                    li Вс
+            div.number
+            div.buttons
+                p(style='color: rgba(31, 32, 65, 0.5);' class='clear') Очитстить
+                P(style='color: #BC9CFF;') Применить
+
+
+            script(src='./date/date.js')

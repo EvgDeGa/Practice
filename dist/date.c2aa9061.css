@@ -1,0 +1,158 @@
+.date {
+  width: 320px;
+  background: #FFFFFF;
+  border: 1px solid rgba(31, 32, 65, 0.25);
+  box-sizing: border-box;
+  box-shadow: 0 10px 20px rgba(31, 32, 65, 0.05);
+  border-radius: 4px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+.date li {
+  list-style-type: none;
+}
+.date .month_year {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 19px 0;
+  width: 272px;
+}
+.date .month_year p {
+  font-family: Open-Sans, sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 19px;
+  line-height: 24px;
+  text-align: center;
+  color: #1F2041;
+  margin: 0;
+}
+.date .week_day ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 257px;
+  padding: 0 12px;
+  margin-top: 23px;
+}
+.date .week_day ul li {
+  font-family: Montserrat-Regular, sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 15px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: #BC9CFF;
+}
+.date .number {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 55px;
+}
+.date .number .week {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+}
+.date .number .week .day {
+  width: 40px;
+  height: 40px;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.date .number .week .day p {
+  position: absolute;
+  user-select: none;
+  font-family: Montserrat-Regular, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 15px;
+  align-items: center;
+  text-align: center;
+  /* Dark 50% */
+  color: rgba(31, 32, 65, 0.5);
+}
+.date .number .week .previous_m p,
+.date .number .week .next_m p {
+  color: rgba(31, 32, 65, 0.25);
+}
+.date .number .week .color {
+  background: linear-gradient(180deg, #eee6ff, #e2e8fe);
+}
+.date .number .week .first div {
+  position: absolute;
+  height: 40px;
+  width: 40px;
+  background: linear-gradient(180deg, #6FCF97 0%, #66D2EA 100%);
+  border-radius: 50%;
+}
+.date .number .week .first p {
+  color: #FFFFFF;
+}
+.date .number .week .first_one {
+  background: linear-gradient(270deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 50%, white 50%, white 100%), linear-gradient(180deg, #eee6ff, #e2e8fe);
+}
+.date .number .week .first_one div {
+  position: absolute;
+  height: 40px;
+  width: 40px;
+  background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+  border-radius: 50%;
+}
+.date .number .week .first_one p {
+  color: white;
+}
+.date .number .week .second {
+  background: linear-gradient(90deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 50%, white 50%, white 100%), linear-gradient(0deg, #eee6ff, #e2e8fe);
+}
+.date .number .week .second div {
+  position: absolute;
+  height: 40px;
+  width: 40px;
+  background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+  border-radius: 50%;
+}
+.date .number .week .second p {
+  color: white;
+}
+.date .buttons {
+  position: absolute;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 280px;
+  bottom: 20px;
+}
+.date .buttons p {
+  font-family: Montserrat-Regular, sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 15px;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+@font-face {
+  font-family: "Open-Sans";
+  src: url("/OpenSans-Regular.369ed7ad.ttf") format("ttf");
+}
+@font-face {
+  font-family: "Montserrat-Regular";
+  src: url("/Montserrat-Regular.d2b6be00.woff") format("woff");
+}
+
+/*# sourceMappingURL=/date.c2aa9061.css.map */

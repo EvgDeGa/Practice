@@ -1,0 +1,296 @@
+@mixin Font_Montserat($size, $weight, $height, $color){
+  font-family: Montserrat-Regular, sans-serif;
+  font-style: normal;
+  font-weight: $weight;
+  font-size: $size;
+  line-height: $height;
+  color: $color;
+}
+
+body{
+  //position: absolute;
+  //display: flex;
+  //flex-direction: column;
+  //justify-content: center;
+  //align-items: center;
+  //margin: 0 auto;
+  //padding-left: calc(50% - 190px);
+  //padding-top: 19px;
+}
+
+.log_in_container {
+  width: 320px;
+  height: 604px;
+  padding: 40px 29px 0 29px;
+
+  border: 1px solid rgba(0, 0, 0, 0.12);
+  border-radius: 4px;
+  box-shadow: 0 0 25px rgba(0, 0, 0, 0.2);
+  background: white;
+
+  //margin: 0 auto;
+
+  h2 {
+    font-family: Open-Sans, sans-serif;
+    line-height: 30px;
+    margin: 0;
+  }
+
+
+  .mail_container {
+    margin-top: 19px;
+    margin-bottom: 8.44px;
+  }
+
+  .enter_email {
+    @include Font_Montserat(14px, normal, 18px, rgba(31, 0, 0, 0.25));
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+
+    height: 44px;
+    width: 320px;
+    padding: 0 14px;
+    border: 1px solid rgba(31, 32, 65, 0.25);
+    box-sizing: border-box;
+    border-radius: 4px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+
+  }
+
+  .radio_container {
+    margin-top: 3px;
+    height: 24px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+  }
+
+  .container {
+    display: block;
+    position: relative;
+    padding-left: 30px;
+    margin-right: 20px;
+    cursor: pointer;
+
+    @include Font_Montserat(14px, normal, 20px, rgba(31, 32, 65, 0.75));
+
+    input {
+      position: absolute;
+      opacity: 0;
+      cursor: pointer;
+    }
+  }
+
+  .checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 18px;
+    width: 18px;
+    background: #FFFFFF;
+
+    border: 1px solid rgba(31, 32, 65, 0.25);
+    border-radius: 50%;
+  }
+
+  .container input:checked ~ .checkmark {
+    border: 1px solid #BC9CFF;
+    background: white;
+  }
+
+  .checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+  }
+
+  .container input:checked ~ .checkmark:after {
+    display: block;
+  }
+
+  .container .checkmark:after {
+    top: 3px;
+    left: 3px;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+  }
+
+  .arrive {
+    margin-top: 20px;
+
+    h3 {
+      @include Font_Montserat(12px, 900, 15px, #1F2041);
+      text-transform: uppercase;
+      margin: 0;
+    }
+  }
+
+  .date {
+    display: flex;
+    flex-direction: column;
+    margin-top: 15px;
+
+    .arrive, .leave {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  }
+
+
+  .confirm {
+    @include Font_Montserat(12px, bold, 15px, white);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    text-align: center;
+    text-transform: uppercase;
+
+    width: 320px;
+    height: 44px;
+    padding-left: 42px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+
+    border: 0;
+    border-radius: 22px;
+    background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+
+    img {
+      height: 16px;
+      width: 16px;
+      margin-left: 12px;
+    }
+
+    p {
+      width: 236px;
+    }
+  }
+
+
+  .swap {
+    top: 0;
+    position: relative;
+  }
+
+  .container_checkbox {
+    display: block;
+    position: relative;
+    padding-left: 50px;
+    margin-right: 20px;
+    cursor: pointer;
+
+    @include Font_Montserat(14px, normal, 20px, rgba(31, 32, 65, 0.75));
+
+    input {
+      position: absolute;
+      opacity: 0;
+      cursor: pointer;
+    }
+  }
+
+  .swap {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 18px;
+    width: 38px;
+    background: #FFFFFF;
+
+    border: 1px solid rgba(31, 32, 65, 0.25);
+    border-radius: 10px;
+  }
+
+  .container_checkbox input:checked ~ .swap {
+    border: 1px solid #BC9CFF;
+    background: white;
+  }
+
+  .swap:after {
+    content: "";
+    position: absolute;
+    display: none;
+  }
+
+  .container_checkbox input:checked ~ .swap:after {
+    display: block;
+    margin-left: 20px;
+    background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+  }
+
+  .container_checkbox .swap:after {
+    display: block;
+    top: 3px;
+    left: 3px;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: rgba(31, 32, 65, 0.25);
+  }
+
+
+  h3 {
+    @include Font_Montserat(12px, bold, 15px, #1F2041);
+    text-transform: uppercase;
+    margin: 0;
+  }
+
+
+  .have_account {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    p {
+      @include Font_Montserat(14px, normal, 16px, #000000);
+      display: flex;
+      align-items: center;
+    }
+  }
+
+
+  .border_input {
+    padding: 2px;
+    height: 40px;
+    width: 95px;
+    background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+    border-radius: 22px;
+  }
+
+  .background_input {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    height: 100%;
+    width: 100%;
+
+    border-radius: 22px;
+    background: white;
+
+    p {
+      margin: 0;
+      @include Font_Montserat(12px, bold, 18px, #BC9CFF);
+      text-align: center;
+      text-transform: uppercase;
+    }
+  }
+}
+
+@font-face {
+  font-family: "Open-Sans";
+  src: url("../../font/OpenSans/OpenSans-Regular.ttf") format("ttf");
+}
+
+@font-face {
+  font-family: "Montserrat-Regular";
+  src: url("../../font/Montserrat/Montserrat-Regular.woff") format("woff");
+
+}

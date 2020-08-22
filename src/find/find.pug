@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        meta(http-equiv="X-UA-Compatible", content="ie=edge")
+        title Document
+    body
+        div.search_room
+            h2 Войти
+            div.mail_container
+                input.enter_email(placeholder="Email")
+                input.enter_email(placeholder="Пароль")
+
+            div.people
+                button.confirm
+                    p Войти
+                    img(src="../image/arrow_forward.svg")
+
+            div.have_account
+                p Нет аккаунта на Toxin?
+                div.border_input
+                    div.background_input
+                        p Создать
+        script(src='./find/find.js')
