@@ -1,31 +1,33 @@
-<!DOCTYPE html>
-html(lang="en")
-    //script(src="https://ajax.aspnetcdn.com/ajax/jquery.ui/1.10.4/jquery-ui.min.js")
-    script(type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js")
-    body
+script(type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js")
+script(src='./room/room.js')
+
+mixin room(number_room, price)
+        - let days = 4
         div.room
             div.first_line
-                p №888
-                p 9990 в сутки
+                p= "№ " + number_room
+                p= price + "₽ в сутки"
             div.arr_lea_gue
                 block content
                     include ../arrival_departure/ arrival_departure
                 block content
                     include ../guest/guest
             div.price
-                p 999
-                p 999
-            div.servies
-                p 999
-                p 999
-            div.add_servies
-                p 999
-                p 999
+                p= price + "₽ x " + days + ' суток'
+                p.first_c= price*days + "₽"
+            div.service
+                p Сбор за услуги: скидка 2 179₽
+                p.second_c 0₽
+            div.add_service
+                p Сбор за дополнительные услуги
+                p.third_c 300₽
             div.total_price
-                p 999
-                p 999
+                p Итого
+                p.total_c 999
+            div.to_book
+                block content
+                    - let title = 'Забронировать'
+                    include ../fill_button/fill_button
 
++room(888, 9990)
 
-
-
-        script(src='./room/room.js')
