@@ -1,0 +1,28 @@
+@import "src/mixin/mixin.scss";
+
+.gosti::-moz-placeholder { color: rgba(31, 32, 65, 0.25);; }
+.gosti::-webkit-input-placeholder { color: rgba(31, 32, 65, 0.25);; }
+
+body {
+  position: relative;
+  margin-top: 0;
+  width: 320px;
+
+  .gosti {
+    @include enter_email(320px);
+    @include Font_Montserat(14px, normal, 20px, rgba(31, 32, 65, 0.75));
+  }
+
+  img {
+    position: absolute;
+    right: 16px;
+    bottom: 17px
+  }
+
+   h3 {
+     @include Font_Montserat(12px, bold, 15px, #1F2041);
+     text-transform: uppercase;
+
+     margin: 0 0 4px 0;
+  }
+}
