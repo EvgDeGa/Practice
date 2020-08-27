@@ -3,9 +3,9 @@
 .gosti::-moz-placeholder { color: rgba(31, 32, 65, 0.25);; }
 .gosti::-webkit-input-placeholder { color: rgba(31, 32, 65, 0.25);; }
 
-body {
+.guest {
   position: relative;
-  margin-top: 0;
+  margin-top: 20px;
   width: 320px;
 
   .gosti {

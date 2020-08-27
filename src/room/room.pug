@@ -3,4 +3,29 @@ html(lang="en")
     //script(src="https://ajax.aspnetcdn.com/ajax/jquery.ui/1.10.4/jquery-ui.min.js")
     script(type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js")
     body
-        script(src='./date/date.js')
+        div.room
+            div.first_line
+                p №888
+                p 9990 в сутки
+            div.arr_lea_gue
+                block content
+                    include ../arrival_departure/ arrival_departure
+                block content
+                    include ../guest/guest
+            div.price
+                p 999
+                p 999
+            div.servies
+                p 999
+                p 999
+            div.add_servies
+                p 999
+                p 999
+            div.total_price
+                p 999
+                p 999
+
+
+
+
+        script(src='./room/room.js')

@@ -1,9 +1,12 @@
 @import "src/mixin/mixin.scss";
 
-.date {
+.arrive_departure {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  margin: 0;
+  width: 318px;
+
   .arrive,
   .leave {
     display: flex;
@@ -11,12 +14,21 @@
     align-items: flex-start;
     position: relative;
     margin-top: 0;
+    margin-right: 20px;
+    width: 150px;
     img{
       position: absolute;
       right: 16px;
       bottom: 17px
     }
   }
+  h3 {
+    @include Font_Montserat(12px, bold, 15px, #1F2041);
+    text-transform: uppercase;
+
+    margin: 0 0 5px 0;
+  }
+
 }
 
 

@@ -2,15 +2,16 @@
 html(lang="en")
     script(type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js")
     body
-        div.arrive
-            h3 Прибытие
-            input.enter_email(placeholder='ДД.ММ.ГГГГ')
-            img(src="../image/expand_more.svg")
-            //block content
-            //    include ../date/date
+        div.arrive_departure
+            div.arrive
+                h3 Прибытие
+                input.enter_email(placeholder='ДД.ММ.ГГГГ')
+                img(src="../image/expand_more.svg")
+                //block content
+                //    include ../date/date
 
-        div.leave
-            h3 Выезд
-            input.enter_email(placeholder='ДД.MМ.ГГГГ')
-            img.drop_down(src="../image/expand_more.svg")
+            div.leave
+                h3 Выезд
+                input.enter_email(placeholder='ДД.MМ.ГГГГ')
+                img.drop_down(src="../image/expand_more.svg")
     script(src='./arrival_departure/arrival_departure.js')
