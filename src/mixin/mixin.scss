@@ -1,0 +1,27 @@
+@mixin enter_email($weight ){
+  //@include Font_Montserat(14px, normal, 18px, rgba(31, 0, 0, 0.25));
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+
+
+  height: 44px;
+  width: $weight;
+  padding: 0 14px;
+  border: 1px solid rgba(31, 32, 65, 0.25);
+  box-sizing: border-box;
+  border-radius: 4px;
+
+  outline: none;
+
+}
+
+@mixin Font_Montserat($size, $weight, $height, $color){
+  font-family: Montserrat-Regular, sans-serif;
+  font-style: normal;
+  font-weight: $weight;
+  font-size: $size;
+  line-height: $height;
+  color: $color;
+}

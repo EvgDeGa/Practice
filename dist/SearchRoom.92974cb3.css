@@ -23,20 +23,89 @@
   text-transform: uppercase;
   color: #1F2041;
   margin: 0;
+  margin-bottom: 5px;
 }
 .main_container .search_room div {
   font-family: Montserrat-Regular, sans-serif;
-  margin-top: 20px;
+  margin-top: 22px;
 }
 .main_container .date {
   display: flex;
   flex-direction: row;
+  justify-content: space-between;
 }
-.main_container .date.arrive,
-.main_container .date.leave {
+.main_container .date .arrive,
+.main_container .date .leave {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
+  position: relative;
+  margin-top: 0;
+}
+.main_container .date .arrive img,
+.main_container .date .leave img {
+  position: absolute;
+  right: 16px;
+  bottom: 17px;
+}
+.main_container .enter_email {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  height: 44px;
+  width: 150px;
+  padding: 0 14px;
+  border: 1px solid rgba(31, 32, 65, 0.25);
+  box-sizing: border-box;
+  border-radius: 4px;
+  outline: none;
+  font-family: Montserrat-Regular, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 20px;
+  color: rgba(31, 32, 65, 0.75);
+}
+.main_container .people {
+  position: relative;
+  margin-top: 0;
+}
+.main_container .people .gosti {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  height: 44px;
+  width: 320px;
+  padding: 0 14px;
+  border: 1px solid rgba(31, 32, 65, 0.25);
+  box-sizing: border-box;
+  border-radius: 4px;
+  outline: none;
+  font-family: Montserrat-Regular, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 20px;
+  color: rgba(31, 32, 65, 0.75);
+}
+.main_container .people img {
+  position: absolute;
+  right: 16px;
+  bottom: 17px;
+}
+.main_container .enter_email::-moz-placeholder {
+  color: rgba(31, 32, 65, 0.25);
+}
+.main_container .enter_email::-webkit-input-placeholder {
+  color: rgba(31, 32, 65, 0.25);
+}
+.main_container .gosti::-moz-placeholder {
+  color: rgba(31, 32, 65, 0.25);
+}
+.main_container .gosti::-webkit-input-placeholder {
+  color: rgba(31, 32, 65, 0.25);
 }
 .main_container .confirm {
   display: flex;
@@ -57,6 +126,7 @@
   border: 0;
   border-radius: 22px;
   background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+  outline: none;
 }
 .main_container .confirm > img {
   height: 16px;

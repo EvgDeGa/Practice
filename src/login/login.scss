@@ -1,11 +1,4 @@
-@mixin Font_Montserat($size, $weight, $height, $color){
-  font-family: Montserrat-Regular, sans-serif;
-  font-style: normal;
-  font-weight: $weight;
-  font-size: $size;
-  line-height: $height;
-  color: $color;
-}
+@import "src/mixin/mixin.scss";
 
 body{
   //position: absolute;
@@ -43,23 +36,11 @@ body{
   }
 
   .enter_email {
-    @include Font_Montserat(14px, normal, 18px, rgba(31, 0, 0, 0.25));
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-
-
-    height: 44px;
-    width: 320px;
-    padding: 0 14px;
-    border: 1px solid rgba(31, 32, 65, 0.25);
-    box-sizing: border-box;
-    border-radius: 4px;
-    margin-top: 5px;
-    margin-bottom: 10px;
-
+    @include enter_email(320px);
+    @include Font_Montserat(14px, normal, 20px, rgba(31, 32, 65, 0.75));
   }
+  .enter_email::-moz-placeholder { color: rgba(31, 32, 65, 0.25);; }
+  .enter_email::-webkit-input-placeholder { color: rgba(31, 32, 65, 0.25);; }
 
   .radio_container {
     margin-top: 3px;

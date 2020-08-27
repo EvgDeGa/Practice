@@ -17,12 +17,6 @@
   margin-bottom: 8.44px;
 }
 .log_in_container .enter_email {
-  font-family: Montserrat-Regular, sans-serif;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 14px;
-  line-height: 18px;
-  color: rgba(31, 0, 0, 0.25);
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -35,6 +29,19 @@
   border-radius: 4px;
   margin-top: 5px;
   margin-bottom: 10px;
+  outline: none;
+  font-family: Montserrat-Regular, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 20px;
+  color: rgba(31, 32, 65, 0.75);
+}
+.log_in_container .enter_email::-moz-placeholder {
+  color: rgba(31, 32, 65, 0.25);
+}
+.log_in_container .enter_email::-webkit-input-placeholder {
+  color: rgba(31, 32, 65, 0.25);
 }
 .log_in_container .radio_container {
   margin-top: 3px;
