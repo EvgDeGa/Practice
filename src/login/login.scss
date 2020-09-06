@@ -35,12 +35,7 @@ body{
     margin-bottom: 8.44px;
   }
 
-  .enter_email {
-    @include enter_email(320px);
-    @include Font_Montserat(14px, normal, 20px, rgba(31, 32, 65, 0.75));
-  }
-  .enter_email::-moz-placeholder { color: rgba(31, 32, 65, 0.25);; }
-  .enter_email::-webkit-input-placeholder { color: rgba(31, 32, 65, 0.25);; }
+
 
   .radio_container {
     margin-top: 3px;
@@ -57,7 +52,7 @@ body{
     margin-right: 20px;
     cursor: pointer;
 
-    @include Font_Montserat(14px, normal, 20px, rgba(31, 32, 65, 0.75));
+    @include Font_Montserrat-Regular(14px,  20px, rgba(31, 32, 65, 0.75));
 
     input {
       position: absolute;
@@ -106,7 +101,7 @@ body{
     margin-top: 20px;
 
     h3 {
-      @include Font_Montserat(12px, 900, 15px, #1F2041);
+      @include Font_Montserrat-Bold(12px, 15px, #1F2041);
       text-transform: uppercase;
       margin: 0;
     }
@@ -126,7 +121,7 @@ body{
 
 
   .confirm {
-    @include Font_Montserat(12px, bold, 15px, white);
+    @include Font_Montserrat-Bold(12px,  15px, white);
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -168,7 +163,7 @@ body{
     margin-right: 20px;
     cursor: pointer;
 
-    @include Font_Montserat(14px, normal, 20px, rgba(31, 32, 65, 0.75));
+    @include Font_Montserrat-Regular(14px, 20px, rgba(31, 32, 65, 0.75));
 
     input {
       position: absolute;
@@ -218,7 +213,7 @@ body{
 
 
   h3 {
-    @include Font_Montserat(12px, bold, 15px, #1F2041);
+    @include Font_Montserrat-Bold(12px,  15px, #1F2041);
     text-transform: uppercase;
     margin: 0;
   }
@@ -230,7 +225,7 @@ body{
     justify-content: space-between;
 
     p {
-      @include Font_Montserat(14px, normal, 16px, #000000);
+      @include Font_Montserrat-Regular(14px,  16px, #000000);
       display: flex;
       align-items: center;
     }
@@ -258,7 +253,7 @@ body{
 
     p {
       margin: 0;
-      @include Font_Montserat(12px, bold, 18px, #BC9CFF);
+      @include Font_Montserrat-Bold(12px,  18px, #BC9CFF);
       text-align: center;
       text-transform: uppercase;
     }

@@ -1,0 +1,34 @@
+@import "src/mixin/mixin.scss";
+
+.subscription {
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+
+  height: 44px;
+  width: 260px;
+  padding: 0 12px 0 14px;
+  margin-top: 5px;
+
+  border: 1px solid rgba(31, 32, 65, 0.25);
+  box-sizing: border-box;
+  border-radius: 4px;
+
+  input {
+    @include Font_Montserrat-Regular(14px, 24px, rgba(31, 32, 65, 0.25));
+
+    place-content: space-between;
+    outline: none;
+    height: 100%;
+    width: 100%;
+    padding: 0;
+
+    border: 0
+  }
+
+  img {
+    //margin-left: 5px;
+  }
+}

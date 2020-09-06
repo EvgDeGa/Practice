@@ -1,10 +1,23 @@
 <!DOCTYPE html>
 html(lang="en")
     script(type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js")
-    body
+    div.guest_container
         div.guest
             h3 Гости
-            input.gosti(placeholder='Сколько гостей')
+            p.gosti Сколько гостей
             img.drop_down(src="../image/expand_more.svg")
+        ul.guest_list
+            each i in ["Взрослые", "Дети", "Младенцы"]
+                li
+                    p.holder= i
+                    div.picker
+                        div.minus
+                            p -
+                        div.number
+                            p 0
+                        div.plus
+                            p +
+            li.enter
+                p применить
     script(src='./guest/guest.js')
 

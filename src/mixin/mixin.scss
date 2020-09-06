@@ -1,13 +1,11 @@
 @mixin enter_email($weight ){
-  //@include Font_Montserat(14px, normal, 18px, rgba(31, 0, 0, 0.25));
   display: flex;
   flex-direction: row;
-  justify-content: center;
   align-items: center;
 
-
   height: 44px;
-  width: $weight;
+  max-width: $weight;
+  min-width: 200px;
   padding: 0 14px;
   border: 1px solid rgba(31, 32, 65, 0.25);
   box-sizing: border-box;
@@ -17,8 +15,37 @@
 
 }
 
-@mixin Font_Montserat($size, $weight, $height, $color){
+@mixin Font_Montserrat-Regular($size, $height, $color){
   font-family: Montserrat-Regular, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: $size;
+  line-height: $height;
+  color: $color;
+}
+
+@mixin Font_Montserrat-Bold($size, $height, $color){
+  font-family: Montserrat-Bold, sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: $size;
+  line-height: $height;
+  color: $color;
+
+}
+
+@mixin Font_QuickSand($size, $height, $color){
+  font-family: Quicksand-Regular, sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: $size;
+  line-height: $height;
+  color: $color;
+  letter-spacing: 2px;
+}
+
+@mixin Font_Open-Sans($size, $weight, $height, $color){
+  font-family: Open-Sans, sans-serif;
   font-style: normal;
   font-weight: $weight;
   font-size: $size;
@@ -26,9 +53,22 @@
   color: $color;
 }
 
+
+li{
+  list-style-type: none;
+}
+
+a{
+  text-decoration: none;
+}
 @font-face {
   font-family: "Open-Sans";
   src: url("../../font/OpenSans/OpenSans-Regular.ttf") format("ttf");
+}
+
+@font-face {
+  font-family: "Quicksand-Regular";
+  src: url("../../font/Quicksand/Quicksand-Regular.woff") format("woff");
 }
 
 @font-face {
@@ -36,3 +76,7 @@
   src: url("../../font/Montserrat/Montserrat-Regular.woff") format("woff");
 }
 
+@font-face {
+  font-family: "Montserrat-Bold";
+  src: url("../../font/Montserrat/Montserrat-Bold.woff") format("woff");
+}

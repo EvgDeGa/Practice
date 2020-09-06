@@ -189,7 +189,7 @@ var reloadCSS = require('_css_loader');
 
 module.hot.dispose(reloadCSS);
 module.hot.accept(reloadCSS);
-},{"./..\\..\\font\\OpenSans\\OpenSans-Regular.ttf":[["OpenSans-Regular.369ed7ad.ttf","../font/OpenSans/OpenSans-Regular.ttf"],"../font/OpenSans/OpenSans-Regular.ttf"],"./..\\..\\font\\Montserrat\\Montserrat-Regular.woff":[["Montserrat-Regular.d2b6be00.woff","../font/Montserrat/Montserrat-Regular.woff"],"../font/Montserrat/Montserrat-Regular.woff"],"_css_loader":"../../../AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/css-loader.js"}],"login/login.js":[function(require,module,exports) {
+},{"./..\\..\\font\\OpenSans\\OpenSans-Regular.ttf":[["OpenSans-Regular.369ed7ad.ttf","../font/OpenSans/OpenSans-Regular.ttf"],"../font/OpenSans/OpenSans-Regular.ttf"],"./..\\..\\font\\Quicksand\\Quicksand-Regular.woff":[["Quicksand-Regular.96adb757.woff","../font/Quicksand/Quicksand-Regular.woff"],"../font/Quicksand/Quicksand-Regular.woff"],"./..\\..\\font\\Montserrat\\Montserrat-Regular.woff":[["Montserrat-Regular.d2b6be00.woff","../font/Montserrat/Montserrat-Regular.woff"],"../font/Montserrat/Montserrat-Regular.woff"],"./..\\..\\font\\Montserrat\\Montserrat-Bold.woff":[["Montserrat-Bold.83c86f61.woff","../font/Montserrat/Montserrat-Bold.woff"],"../font/Montserrat/Montserrat-Bold.woff"],"_css_loader":"../../../AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/css-loader.js"}],"login/login.js":[function(require,module,exports) {
 "use strict";
 
 require("./login.scss");
@@ -221,7 +221,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "56761" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "54233" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

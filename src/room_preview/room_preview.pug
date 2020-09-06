@@ -18,7 +18,8 @@ mixin elipse
 
 
 
-mixin room_preview(number_room, price)
+mixin room_preview(number_room, price, status,review)
+    - status = status || ''
     div.room_preview
         div.slider
             div.left
@@ -32,12 +33,24 @@ mixin room_preview(number_room, price)
                 +elipse
                 +elipse
                 +elipse
-        div.first_line
-            p= "№ " + number_room
-            p= price + "₽ в сутки"
-        div.line
-        //div.rating
-        //    include ../rate_button/rate_button
+        div.information
+            div.first_line
+                div
+                    p.apar= "№ " + number_room + " "
+                    p.apar_status= status
+                div
+                    p.price= price + "₽ "
+                    p.per_day в сутки
+            div.line
+            div.second_line
+                div.rating
+                    include ../rate_button/rate_button
+                div.review
+                    p.rev_num= review
+                    p &#160;
+                    p.rev &#160;
 
-+room_preview(888,9990)
+
++room_preview(888,9990, "люкс", 2)
+
 

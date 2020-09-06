@@ -22,13 +22,10 @@
   }
 
   .search_room h3 {
+    @include Font_Montserat(12px, bold, 15px, #1F2041);
     font-family: Montserrat-Regular, sans-serif;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 12px;
-    line-height: 15px;
     text-transform: uppercase;
-    color: #1F2041;
+
 
     margin: 0;
     margin-bottom: 5px;
@@ -46,14 +43,11 @@
     flex-direction: row;
     align-items: center;
 
-    font-family: Montserrat-Regular, sans-serif;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 12px;
-    line-height: 15px;
+    @include Font_Montserat(12px, bold, 15px, white);
+
     text-align: center;
     text-transform: uppercase;
-    color: white;
+
 
     width: 320px;
     height: 44px;
@@ -76,14 +70,4 @@
   .confirm > p {
     width: 236px;
   }
-}
-@font-face {
-  font-family: "Open-Sans";
-  src: url("../../font/OpenSans/OpenSans-Regular.ttf") format("ttf");
-}
-
-@font-face {
-  font-family: "Montserrat-Regular";
-  src: url("../../font/Montserrat/Montserrat-Regular.woff") format("woff");
-
 }

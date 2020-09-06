@@ -1,5 +1,3 @@
-import './guest.scss';
-
 
 export function guest() {
     let flag = {Value: true}
@@ -101,6 +99,3 @@ export function guest() {
     }
 }
 
-window.onload = function () {
-    guest()
-}
