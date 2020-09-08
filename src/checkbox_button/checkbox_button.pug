@@ -1,0 +1,17 @@
+script(type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js")
+script(src='./checkbox_button/checkbox_button.js')
+
+mixin checkbox_button(name,list)
+    div.checkbox_button
+        each i in list
+            div.checkbox
+                label.container= i
+                    input(type="checkbox" name="check" placeholder=i)
+                    span.checkmark
+
+
+
+
+
+
++checkbox_button("Дополнительные удобства",["Завтрак",'Письменный стол','Стул для кормления','Кроватка'])

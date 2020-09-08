@@ -1,0 +1,12 @@
+script(type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js")
+script(src='./radio_button/radio_button.js')
+
+
+mixin radio_button(name)
+    div.radio_button
+        each i in name
+            label.container= i
+                input(type='radio' name='radio' value=i)
+                span.checkmark
+
++radio_button(["Мужчина","Женщина","Ребенеок"])

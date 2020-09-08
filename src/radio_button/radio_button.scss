@@ -1,0 +1,66 @@
+@import "src/mixin/mixin.scss";
+
+.radio_button {
+  display: flex;
+  flex-direction: row;
+
+  .radio_container {
+    margin-top: 3px;
+    height: 24px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+  }
+
+  .container {
+    display: block;
+    position: relative;
+    padding-left: 30px;
+    margin-right: 20px;
+    cursor: pointer;
+
+    @include Font_Montserrat-Regular(14px, 20px, rgba(31, 32, 65, 0.75));
+
+    input {
+      position: absolute;
+      opacity: 0;
+      cursor: pointer;
+    }
+  }
+
+  .checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 18px;
+    width: 18px;
+    background: #FFFFFF;
+
+    border: 1px solid rgba(31, 32, 65, 0.25);
+    border-radius: 50%;
+  }
+
+  .container input:checked ~ .checkmark {
+    border: 1px solid #BC9CFF;
+    background: white;
+  }
+
+  .checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+  }
+
+  .container input:checked ~ .checkmark:after {
+    display: block;
+  }
+
+  .container .checkmark:after {
+    top: 3px;
+    left: 3px;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+  }
+}
