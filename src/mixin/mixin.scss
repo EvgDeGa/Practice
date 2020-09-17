@@ -34,15 +34,17 @@
 
 }
 
-@mixin Font_QuickSand($size, $height, $color){
+@mixin Font_QuickSand($size, $weight, $height, $color){
   font-family: Quicksand-Regular, sans-serif;
   font-style: normal;
-  font-weight: 700;
+  font-weight: $weight;
   font-size: $size;
   line-height: $height;
   color: $color;
   letter-spacing: 2px;
 }
+
+
 
 @mixin Font_Open-Sans($size, $weight, $height, $color){
   font-family: Open-Sans, sans-serif;

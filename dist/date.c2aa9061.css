@@ -146,13 +146,4 @@
   margin: 0;
 }
 
-@font-face {
-  font-family: "Open-Sans";
-  src: url("/OpenSans-Regular.369ed7ad.ttf") format("ttf");
-}
-@font-face {
-  font-family: "Montserrat-Regular";
-  src: url("/Montserrat-Regular.d2b6be00.woff") format("woff");
-}
-
 /*# sourceMappingURL=/date.c2aa9061.css.map */

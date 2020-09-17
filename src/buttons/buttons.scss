@@ -1,0 +1,35 @@
+
+.border {
+  display: inline-block;
+
+  justify-content: center;
+  align-items: center;
+  width: auto;
+  height: 30px;
+  padding: 2px;
+  border-radius: 22px;
+  background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+}
+  .fill{
+    display: inline-block;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+
+  }
+
+  p{
+    margin: 0 20px;
+    font-family: Montserrat-Regular, sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 15px;
+    text-align: center;
+    /* identical to box height */
+
+    text-transform: uppercase;
+
+    color: #FFFFFF;
+  }
