@@ -4,12 +4,23 @@ window.onload = function () {
     var thumb = document.getElementById('thumb');
     var thumb2 = document.getElementById('thumb2');
     var slider = document.getElementById('slider');
+    var range = document.getElementById('range');
+    var first_price = document.getElementById('first_price');
+    var second_price = document.getElementById('second_price');
+    let coor = {Val1: thumb.getBoundingClientRect().left, Val2: thumb2.getBoundingClientRect().left}
+    let marg = thumb.getBoundingClientRect().left
+    let price = parseInt($(second_price).html())
+    console.log(price)
+    console.log(coor.Val1,coor.Val2)
+    price = price / (250 - thumb.offsetWidth + 1)
 
 
     thumb.onmousedown = function(event) {
         event.preventDefault(); // предотвратить запуск выделения (действие браузера)
 
         let shiftX = event.clientX - thumb.getBoundingClientRect().left;
+        console.log(event.clientX)
+        console.log(shiftX)
         // shiftY здесь не нужен, слайдер двигается только по горизонтали
 
         document.addEventListener('mousemove', onMouseMove);
@@ -19,15 +30,26 @@ window.onload = function () {
             let newLeft = event.clientX - shiftX - slider.getBoundingClientRect().left;
 
             // курсор вышел из слайдера => оставить бегунок в его границах.
-            if (newLeft < 0) {
-                newLeft = 0;
-            }
-            let rightEdge = slider.offsetWidth - thumb.offsetWidth;
-            if (newLeft > rightEdge) {
-                newLeft = rightEdge;
+            if (newLeft < -1) {
+                newLeft = -1;
             }
 
+            let edge = coor.Val2 - thumb.offsetWidth - marg;
+            console.log("edge",edge)
+            if(newLeft > edge){
+                newLeft = edge
+            }
+            console.log("newLeft",newLeft)
             thumb.style.left = newLeft + 'px';
+            coor.Val1 =  thumb.getBoundingClientRect().left
+            coor.Val2 =  thumb2.getBoundingClientRect().left
+            let range_width = coor.Val2 - newLeft  - marg
+
+            range.style.width = range_width + 'px'
+            range.style.left = newLeft + 6 + 'px';
+            $(first_price).html(Math.round((newLeft + 1)*price))
+
+
         }
 
         function onMouseUp() {
@@ -35,6 +57,7 @@ window.onload = function () {
             document.removeEventListener('mousemove', onMouseMove);
         }
 
+        console.log(coor.Val1,coor.Val2)
     };
 
     thumb.ondragstart = function() {
@@ -42,9 +65,10 @@ window.onload = function () {
     };
 
     thumb2.onmousedown = function(event) {
+
         event.preventDefault(); // предотвратить запуск выделения (действие браузера)
 
-        let shiftX = event.clientX - thumb.getBoundingClientRect().left;
+        let shiftX = event.clientX - thumb2.getBoundingClientRect().left;
         // shiftY здесь не нужен, слайдер двигается только по горизонтали
 
         document.addEventListener('mousemove', onMouseMove);
@@ -53,16 +77,27 @@ window.onload = function () {
         function onMouseMove(event) {
             let newLeft = event.clientX - shiftX - slider.getBoundingClientRect().left;
 
-            // курсор вышел из слайдера => оставить бегунок в его границах.
-            if (newLeft < 0) {
-                newLeft = 0;
-            }
-            let rightEdge = slider.offsetWidth - thumb.offsetWidth;
-            if (newLeft > rightEdge) {
-                newLeft = rightEdge;
+
+            let rightEdge = slider.offsetWidth - thumb2.offsetWidth;
+            if (newLeft > rightEdge -1) {
+                newLeft = rightEdge -1;
             }
 
-            thumb.style.left = newLeft + 'px';
+            let edge = coor.Val1 - thumb2.offsetWidth - marg + 30
+            if(newLeft < edge){
+                newLeft = edge
+            }
+            thumb2.style.left = newLeft + 'px';
+            coor.Val1 =  thumb.getBoundingClientRect().left
+            coor.Val2 =  thumb2.getBoundingClientRect().left
+
+            let range_width = newLeft - coor.Val1 + marg
+            console.log(range_width)
+            range.style.width = range_width + 'px'
+            //range.style.left = newLeft + 6 + 'px';
+            $(second_price).html(Math.round((newLeft-14)*price))
+
+
         }
 
         function onMouseUp() {

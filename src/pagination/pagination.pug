@@ -1,0 +1,37 @@
+script(src='./pagination/pagination.js')
+
+mixin pagination(max)
+    - max_page = Math.ceil(max / 12)
+    - max_var = max
+    - if(max > 100) max_var = "100+"
+    div.pagination
+        div.numbers
+            if(max_page > 5)
+                div.first_number.choose
+                    p 1
+                div.first_number
+                    p 2
+                div.first_number
+                    p 3
+                div.three_dots
+                    p ...
+                div.second_number
+                    p= max_page
+            if(max_page < 6)
+                - for(let i = 0; i < max_page; i++)
+                    if(i === 0)
+                        div.first_number.choose
+                                p= i + 1
+                    else
+                        div.first_number
+                            p= i + 1
+            div.arrow
+                img(src="../image/arrow_forward.svg")
+        div.information
+            p= "1 – 12 из " + max_var + " вариантов аренды"
+
+
+
+
+
++pagination(34)
