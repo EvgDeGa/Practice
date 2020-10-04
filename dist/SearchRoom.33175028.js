@@ -192,7 +192,7 @@ module.hot.accept(reloadCSS);
 },{"_css_loader":"../../../AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/css-loader.js"}],"SearchRoom.js":[function(require,module,exports) {
 "use strict";
 
-require("./SearchRoom.scss");
+require("./Searchroom.scss");
 },{"./SearchRoom.scss":"SearchRoom.scss"}],"../../../AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
@@ -398,4 +398,4 @@ function hmrAcceptRun(bundle, id) {
   }
 }
 },{}]},{},["../../../AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/hmr-runtime.js","SearchRoom.js"], null)
-//# sourceMappingURL=/SearchRoom.33175028.js.map
+//# sourceMappingURL=/Searchroom.33175028.js.map

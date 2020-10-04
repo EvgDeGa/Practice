@@ -192,7 +192,7 @@ module.hot.accept(reloadCSS);
 },{"./..\\..\\font\\OpenSans\\OpenSans-Regular.ttf":[["OpenSans-Regular.369ed7ad.ttf","../font/OpenSans/OpenSans-Regular.ttf"],"../font/OpenSans/OpenSans-Regular.ttf"],"./..\\..\\font\\Montserrat\\Montserrat-Regular.woff":[["Montserrat-Regular.d2b6be00.woff","../font/Montserrat/Montserrat-Regular.woff"],"../font/Montserrat/Montserrat-Regular.woff"],"_css_loader":"../../../AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/css-loader.js"}],"SearchRoom/SearchRoom.js":[function(require,module,exports) {
 "use strict";
 
-require("./SearchRoom.scss");
+require("./Searchroom.scss");
 
 window.onload = function () {
   var el = document.getElementsByClassName("confirm");
@@ -413,4 +413,4 @@ function hmrAcceptRun(bundle, id) {
   }
 }
 },{}]},{},["../../../AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/hmr-runtime.js","SearchRoom/SearchRoom.js"], null)
-//# sourceMappingURL=/SearchRoom.92974cb3.js.map
+//# sourceMappingURL=/Searchroom.92974cb3.js.map
