@@ -1,0 +1,64 @@
+body{
+  max-width: 1920px;
+  min-width: 320px;
+  //width: 100%;
+  //padding: 0 140px;
+}
+main{
+  margin: 0 auto;
+  max-width: 1160px;
+}
+
+
+main{
+  display: flex;
+  flex-direction: row;
+  margin: 0 auto;
+}
+
+.search_from-side_bar{
+  width: 266px;
+}
+
+.search_from-content{
+  p{
+    font-family: Quicksand-Regular, sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 30px;
+    /* identical to box height */
+
+
+    /* Dark 100% */
+
+    color: #1F2041;
+
+    margin: 30px 0 0 12px ;
+  }
+  .rooms {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .pages{
+    width: 241px;
+    margin: 40px auto;
+  }
+
+  margin-left: 48px;
+  //width: 848px;
+}
+
+@media  (max-width: 1440px) {
+  body {
+    padding: 0 ;
+  }
+
+
+
+}
+
+
+

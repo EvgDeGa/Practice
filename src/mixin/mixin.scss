@@ -4,8 +4,8 @@
   align-items: center;
 
   height: 44px;
-  max-width: $weight;
-  min-width: 200px;
+  width: $weight;
+  min-width: 150px;
   padding: 0 14px;
   border: 1px solid rgba(31, 32, 65, 0.25);
   box-sizing: border-box;
@@ -63,10 +63,10 @@ li{
 a{
   text-decoration: none;
 }
-@font-face {
-  font-family: "Open-Sans";
-  src: url("../../font/OpenSans/OpenSans-Regular.ttf") format("ttf");
-}
+//@font-face {
+//  font-family: "Open-Sans";
+//  src: url("") format("ttf");
+//}
 
 @font-face {
   font-family: "Quicksand-Regular";

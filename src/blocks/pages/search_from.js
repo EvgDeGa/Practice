@@ -1,9 +1,12 @@
-import {arrival_departure} from '../arrival_departure/arrival_departure';
+import './search_from.scss';
+
+//import {arrival_departure} from '../../arrival_departure/arrival_departure';
 import {bullet_list} from '../bullet_list/bullet_list';
 import {buttons} from '../buttons/buttons';
 import {checkbox_button} from '../checkbox_button/checkbox_button';
 import {comment} from '../comment/comment';
-// import {date} from '../date/date';
+// import {date} from '../../date/date';
+import {date_of_stay} from '../date_of_stay/date_of_stay';
 import {expandable_checkbox_list} from '../expandable_checkbox_list/expandable_checkbox_list';
 import {fill_button} from '../fill_button/fill_button';
 import {filling_room} from '../filling_room/filling_room';
@@ -26,30 +29,31 @@ import {text_field} from '../text_field/text_field';
 import {toggle} from '../toggle/toggle';
 
 window.onload = function(){
-    // arrival_departure()
-    // bullet_list()
-    // buttons()
-    // checkbox_button()
-    // comment()
+    //arrival_departure()
+    //bullet_list()
+    //buttons()
+    checkbox_button()
+    //comment()
     // date()
-    // expandable_checkbox_list()
-    // fill_button()
-    // filling_room()
-    // footer()
-    // guest()
-    // header()
-    // like_button()
-    // login()
-    // pagination()
+    date_of_stay()
+    expandable_checkbox_list()
+    //fill_button()
+    filling_room()
+    footer()
+    guest()
+    header()
+    //like_button()
+    //login()
+    //pagination()
     // rate_button()
-    // radio_button()
-    // range_slider()
-    // rich_checkbox_button()
-    // room()
-    room_preview()
-    // searchroom()
-    // signin()
-    // subscription()
-    // text_field()
-    // toggle()
+    //radio_button()
+    range_slider()
+    rich_checkbox_button()
+    pagination()
+    //room_preview()
+    //searchroom()
+    //signin()
+    //subscription()
+    //text_field()
+    //toggle()
 }

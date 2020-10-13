@@ -1,0 +1,42 @@
+include ../header/header
+include ../room_preview/room_preview
+include ../guest/guest
+include ../date_of_stay/date_of_stay
+include ../checkbox_button/checkbox_button
+include ../expandable_checkbox_list/expandable_checkbox_list
+include ../rich_checkbox_button/rich_checkbox_button
+include ../footer/footer
+include ../range_slider/range_slider
+include ../filling_room/filling_room
+include ../pagination/pagination
+<!DOCTYPE html>
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        meta(http-equiv="X-UA-Compatible", content="ie=edge")
+        title Document
+        script(type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js")
+        script(type="text/javascript" src="./search_from.js")
+
+    body(style=("background-color : #fff; margin: 0"))
+        header
+            +header()
+        main
+            .search_from-side_bar
+                +date_of_stay()
+                +guest()
+                +range_slider("диапазон цены",10000)
+                +checkbox_button("правила дома",["Можно курить","Можно с питомцами","Можно пригласить гостей (до 10 человек)"])
+                +rich_checkbox_button("доступность",["Широкий коридор","Помощник для инвалидов"],["Ширина коридоров в номере не менее 91 см.","На 1 этаже вас встретит специалист  и проводит до номера."])
+                +filling_room("удобства номера")
+                +expandable_checkbox_list("дополнительные удобства",["Завтрак","Письменный стол","Стул для кормления","Кроватка","Телевизор","Шампунь"])
+            .search_from-content
+                p Номера, которые мы для вас подобрали
+                .rooms
+                    -for(let i=0;i<12;i++)
+                        +room_preview(999,999,999)
+                .pages
+                    +pagination(111)
+        footer
+            +footer
