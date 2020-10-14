@@ -1,0 +1,1 @@
+{"version":3,"sources":["blocks/signin/signin.js"],"names":["signin"],"mappings":";;;;;;;AAAA;;AAEO,SAASA,MAAT,GAAiB,CAAE","file":"signin.6d2d7e5f.js","sourceRoot":"..\\src","sourcesContent":["import './signin.scss';\r\n\r\nexport function signin(){}"]}

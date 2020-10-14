@@ -1,0 +1,10 @@
+@import "src/mixin/mixin.scss";
+
+.text_field{
+  .enter_email {
+    @include enter_email(320px);
+    @include Font_Montserrat-Regular(14px, 20px, rgba(31, 32, 65, 0.75));
+  }
+  .enter_email::-moz-placeholder { color: rgba(31, 32, 65, 0.25) }
+  .enter_email::-webkit-input-placeholder { color: rgba(31, 32, 65, 0.25) }
+}

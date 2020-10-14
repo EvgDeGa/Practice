@@ -1,0 +1,137 @@
+li {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+@font-face {
+  font-family: "Open-Sans";
+  src: url("/OpenSans-Regular.369ed7ad.ttf") format("ttf");
+}
+@font-face {
+  font-family: "Quicksand-Regular";
+  src: url("/Quicksand-Regular.96adb757.woff") format("woff");
+}
+@font-face {
+  font-family: "Montserrat-Regular";
+  src: url("/Montserrat-Regular.d2b6be00.woff") format("woff");
+}
+@font-face {
+  font-family: "Montserrat-Bold";
+  src: url("/Montserrat-Bold.83c86f61.woff") format("woff");
+}
+.filling_room_container * {
+  user-select: none;
+}
+.filling_room_container .filling_room {
+  position: relative;
+  margin-top: 20px;
+  max-width: 266px;
+  min-width: 200px;
+}
+.filling_room_container .filling_room .room {
+  margin: 0;
+  text-align: left;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  height: 44px;
+  max-width: 266px;
+  min-width: 200px;
+  padding: 0 14px;
+  border: 1px solid rgba(31, 32, 65, 0.25);
+  box-sizing: border-box;
+  border-radius: 4px;
+  outline: none;
+  font-family: Montserrat-Regular, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  color: rgba(31, 32, 65, 0.25);
+}
+.filling_room_container .filling_room img {
+  position: absolute;
+  right: 16px;
+  top: 37px;
+}
+.filling_room_container .filling_room h3 {
+  font-family: Montserrat-Bold, sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 15px;
+  color: #1F2041;
+  text-transform: uppercase;
+  margin: 0 0 4px 0;
+}
+.filling_room_container .room_list {
+  max-width: 264px;
+  min-width: 198px;
+  display: none;
+  padding: 0 0 7px 0;
+  margin: 0;
+  border: 1px solid rgba(31, 32, 65, 0.5);
+  border-radius: 4px;
+  box-shadow: 0 10px 20px rgba(31, 32, 65, 0.05);
+  border-top: 0;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}
+.filling_room_container .room_list li {
+  padding: 6px 6px 1px 14px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.filling_room_container .room_list .holder {
+  font-family: Montserrat-Bold, sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 17px;
+  color: #1F2041;
+  margin: 0;
+  text-transform: uppercase;
+  margin-bottom: 2px;
+}
+.filling_room_container .room_list .picker {
+  display: flex;
+  flex-direction: row;
+}
+.filling_room_container .room_list .picker p {
+  display: flex;
+  justify-content: center;
+  height: 100%;
+  margin: 0;
+  align-items: center;
+  text-align: center;
+}
+.filling_room_container .room_list .picker .number {
+  font-family: Montserrat-Bold, sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 15px;
+  color: #1F2041;
+  width: 32px;
+  height: 28px;
+}
+.filling_room_container .room_list .picker .minus,
+.filling_room_container .room_list .picker .plus {
+  border: 1px solid rgba(31, 32, 65, 0.25);
+  border-radius: 22px;
+  font-family: Montserrat-Regular, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px;
+  color: rgba(31, 32, 65, 0.5);
+  width: 28px;
+  height: 28px;
+}
+
+/*# sourceMappingURL=/filling_room.a61a6ffe.css.map */

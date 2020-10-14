@@ -1,0 +1,45 @@
+@import "src/mixin/mixin.scss";
+
+.arrive_departure {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 0;
+  width: 318px;
+
+  .arrive,
+  .leave {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    position: relative;
+    margin-top: 0;
+    margin-right: 20px;
+    width: 150px;
+    img{
+      position: absolute;
+      right: 16px;
+      bottom: 17px
+    }
+  }
+  .text_H {
+    @include Font_Montserrat-Bold(12px, 24px, #1F2041);
+    text-transform: uppercase;
+
+    margin: 0 0 0 0;
+  }
+
+
+
+
+
+
+.enter_email {
+  @include enter_email(150px);
+  @include Font_Montserrat-Regular(14px, 20px, rgba(31, 32, 65, 0.75));
+}
+
+
+.enter_email::-moz-placeholder { color: rgba(31, 32, 65, 0.25);; }
+.enter_email::-webkit-input-placeholder { color: rgba(31, 32, 65, 0.25);; }
+}

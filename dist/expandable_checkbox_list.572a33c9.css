@@ -1,0 +1,108 @@
+li {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+@font-face {
+  font-family: "Open-Sans";
+  src: url("/OpenSans-Regular.369ed7ad.ttf") format("ttf");
+}
+@font-face {
+  font-family: "Quicksand-Regular";
+  src: url("/Quicksand-Regular.96adb757.woff") format("woff");
+}
+@font-face {
+  font-family: "Montserrat-Regular";
+  src: url("/Montserrat-Regular.d2b6be00.woff") format("woff");
+}
+@font-face {
+  font-family: "Montserrat-Bold";
+  src: url("/Montserrat-Bold.83c86f61.woff") format("woff");
+}
+.expandable_checkbox_list {
+  position: relative;
+  width: 266px;
+  display: flex;
+  flex-direction: column;
+}
+.expandable_checkbox_list * {
+  user-select: none;
+}
+.expandable_checkbox_list .drop {
+  display: none;
+}
+.expandable_checkbox_list p {
+  font-family: Montserrat-Bold, sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 15px;
+  color: #1F2041;
+  text-transform: uppercase;
+}
+.expandable_checkbox_list img {
+  position: absolute;
+  right: 16px;
+  top: 16px;
+}
+.expandable_checkbox_list .checkbox {
+  padding: 5px 0;
+  height: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+.expandable_checkbox_list .container {
+  display: block;
+  position: relative;
+  padding-left: 30px;
+  margin-right: 20px;
+  cursor: pointer;
+  font-family: Montserrat-Regular, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  color: rgba(31, 32, 65, 0.75);
+}
+.expandable_checkbox_list .container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+.expandable_checkbox_list .checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 18px;
+  width: 18px;
+  background: #FFFFFF;
+  border: 1px solid rgba(31, 32, 65, 0.25);
+  border-radius: 4px;
+}
+.expandable_checkbox_list .container input:checked ~ .checkmark {
+  border: 1px solid #BC9CFF;
+  background: white;
+}
+.expandable_checkbox_list .checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+.expandable_checkbox_list .container input:checked ~ .checkmark:after {
+  display: block;
+}
+.expandable_checkbox_list .container .checkmark:after {
+  top: 5px;
+  left: 5px;
+  width: 6px;
+  height: 4px;
+  border-bottom: 2px solid #BC9CFF;
+  border-left: 2px solid #BC9CFF;
+  transform: rotate(-45deg);
+}
+
+/*# sourceMappingURL=/expandable_checkbox_list.572a33c9.css.map */

@@ -1,0 +1,15 @@
+include  ../like_button/like_button
+mixin comment(name,date,text,photo)
+    - var name = name || "Имя Фамилия"
+    - var date = date || "5 дней назад"
+    - var text = text || "текст"
+    - var photo = photo || "/image/round-avatar.png"
+    div.comment
+        div.first_column
+            img(src=photo)
+            +like_button(12).
+        div.second_column
+            p.name= name
+            p.date_ago= date
+            p.text= text
+

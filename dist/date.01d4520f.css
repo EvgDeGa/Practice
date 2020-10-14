@@ -1,0 +1,174 @@
+li {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+@font-face {
+  font-family: "Quicksand-Regular";
+  src: url("/Quicksand-Regular.5734f72b.woff") format("woff");
+}
+@font-face {
+  font-family: "Montserrat-Regular";
+  src: url("/Montserrat-Regular.3879dd71.woff") format("woff");
+}
+@font-face {
+  font-family: "Montserrat-Bold";
+  src: url("/Montserrat-Bold.cf84ca58.woff") format("woff");
+}
+* {
+  user-select: none;
+}
+
+.date {
+  width: 320px;
+  background: #FFFFFF;
+  border: 1px solid rgba(31, 32, 65, 0.25);
+  box-sizing: border-box;
+  box-shadow: 0 10px 20px rgba(31, 32, 65, 0.05);
+  border-radius: 4px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+.date li {
+  list-style-type: none;
+}
+.date .month_year {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 19px 0;
+  width: 272px;
+}
+.date .month_year p {
+  font-family: Quicksand-Regular, sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 19px;
+  line-height: 24px;
+  color: #1F2041;
+  letter-spacing: 2px;
+  text-align: center;
+  margin: 0;
+}
+.date .week_day ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 257px;
+  padding: 0 12px;
+  margin-top: 23px;
+}
+.date .week_day ul li {
+  font-family: Montserrat-Bold, sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 15px;
+  color: #BC9CFF;
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+.date .number {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 55px;
+}
+.date .number .week {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+}
+.date .number .week .day {
+  width: 40px;
+  height: 40px;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.date .number .week .day p {
+  position: absolute;
+  user-select: none;
+  font-family: Montserrat-Regular, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 15px;
+  color: rgba(31, 32, 65, 0.5);
+  align-items: center;
+  text-align: center;
+}
+.date .number .week .previous_m p,
+.date .number .week .next_m p {
+  color: rgba(31, 32, 65, 0.25);
+}
+.date .number .week .color {
+  background: linear-gradient(180deg, #eee6ff, #e2e8fe);
+}
+.date .number .week .first div {
+  position: absolute;
+  height: 40px;
+  width: 40px;
+  background: linear-gradient(180deg, #6FCF97 0%, #66D2EA 100%);
+  border-radius: 50%;
+}
+.date .number .week .first p {
+  color: #FFFFFF;
+}
+.date .number .week .first_one {
+  background: linear-gradient(270deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 50%, white 50%, white 100%), linear-gradient(180deg, #eee6ff, #e2e8fe);
+}
+.date .number .week .first_one div {
+  position: absolute;
+  height: 40px;
+  width: 40px;
+  background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+  border-radius: 50%;
+}
+.date .number .week .first_one p {
+  color: white;
+}
+.date .number .week .second {
+  background: linear-gradient(90deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 50%, white 50%, white 100%), linear-gradient(0deg, #eee6ff, #e2e8fe);
+}
+.date .number .week .second div {
+  position: absolute;
+  height: 40px;
+  width: 40px;
+  background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+  border-radius: 50%;
+}
+.date .number .week .second p {
+  color: white;
+}
+.date .buttons {
+  position: absolute;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 280px;
+  bottom: 20px;
+}
+.date .buttons p {
+  font-family: Montserrat-Regular, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 15px;
+  color: rgba(31, 32, 65, 0.25);
+  text-transform: uppercase;
+  margin: 0;
+}
+
+/*# sourceMappingURL=/date.01d4520f.css.map */

@@ -1,0 +1,19 @@
+
+mixin filling_room(name)
+    div.filling_room_container
+        div.filling_room(id="filling_room")
+            h3= name
+            p.filling_room_text Выбирите
+            img.drop_down(src="/image/expand_more.svg")
+        ul.room_list
+            each i in ["Спальни", "Кровати", "Ванные комнаты"]
+                li
+                    p.holder= i
+                    div.picker
+                        div.room_minus
+                            p -
+                        div.room_number
+                            p 0
+                        div.room_plus
+                            p +
+

@@ -1,0 +1,32 @@
+@import "src/mixin/mixin.scss";
+
+.border {
+  display: inline-block;
+
+  justify-content: center;
+  align-items: center;
+  width: auto;
+  height: 40px;
+  padding: 2px;
+  border-radius: 22px;
+  background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+
+  .fill {
+    display: inline-block;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+
+  }
+
+  p {
+    margin: 13px 20px;
+    @include Font_Montserrat-Bold(12px, 15px, #fff);
+
+    text-align: center;
+
+    text-transform: uppercase;
+
+  }
+}

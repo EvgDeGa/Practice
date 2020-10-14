@@ -1,0 +1,1 @@
+{"version":3,"sources":["blocks/toggle/toggle.js"],"names":["toggle"],"mappings":";;;;;;;AAAA;;AACO,SAASA,MAAT,GAAkB,CAAE","file":"toggle.0d98dcf6.js","sourceRoot":"..\\src","sourcesContent":["import './toggle.scss';\r\nexport function toggle() {}"]}

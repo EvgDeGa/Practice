@@ -1,0 +1,20 @@
+mixin guest()
+    body
+        div.guest_container
+            div.guest(id="guest")
+                h3 Гости
+                p.gosti Сколько гостей
+                img.drop_down(src="/image/expand_more.svg")
+            ul.guest_list
+                each i in ["Взрослые", "Дети", "Младенцы"]
+                    li
+                        p.holder= i
+                        div.picker
+                            div.guest_minus
+                                p -
+                            div.guest_number
+                                p 0
+                            div.guest_plus
+                                p +
+                li.enter
+                    p применить

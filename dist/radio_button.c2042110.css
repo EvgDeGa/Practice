@@ -1,0 +1,85 @@
+li {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+@font-face {
+  font-family: "Open-Sans";
+  src: url("/OpenSans-Regular.369ed7ad.ttf") format("ttf");
+}
+@font-face {
+  font-family: "Quicksand-Regular";
+  src: url("/Quicksand-Regular.96adb757.woff") format("woff");
+}
+@font-face {
+  font-family: "Montserrat-Regular";
+  src: url("/Montserrat-Regular.d2b6be00.woff") format("woff");
+}
+@font-face {
+  font-family: "Montserrat-Bold";
+  src: url("/Montserrat-Bold.83c86f61.woff") format("woff");
+}
+.radio_button {
+  display: flex;
+  flex-direction: row;
+}
+.radio_button .radio_container {
+  margin-top: 3px;
+  height: 24px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+.radio_button .container {
+  display: block;
+  position: relative;
+  padding-left: 30px;
+  margin-right: 20px;
+  cursor: pointer;
+  font-family: Montserrat-Regular, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  color: rgba(31, 32, 65, 0.75);
+}
+.radio_button .container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+.radio_button .checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 18px;
+  width: 18px;
+  background: #FFFFFF;
+  border: 1px solid rgba(31, 32, 65, 0.25);
+  border-radius: 50%;
+}
+.radio_button .container input:checked ~ .checkmark {
+  border: 1px solid #BC9CFF;
+  background: white;
+}
+.radio_button .checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+.radio_button .container input:checked ~ .checkmark:after {
+  display: block;
+}
+.radio_button .container .checkmark:after {
+  top: 3px;
+  left: 3px;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+}
+
+/*# sourceMappingURL=/radio_button.c2042110.css.map */

@@ -1,0 +1,31 @@
+li {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+@font-face {
+  font-family: "Open-Sans";
+  src: url("/OpenSans-Regular.369ed7ad.ttf") format("ttf");
+}
+@font-face {
+  font-family: "Quicksand-Regular";
+  src: url("/Quicksand-Regular.96adb757.woff") format("woff");
+}
+@font-face {
+  font-family: "Montserrat-Regular";
+  src: url("/Montserrat-Regular.d2b6be00.woff") format("woff");
+}
+@font-face {
+  font-family: "Montserrat-Bold";
+  src: url("/Montserrat-Bold.83c86f61.woff") format("woff");
+}
+.border {
+  width: 100px;
+  height: 100px;
+  border: 1px solid red;
+}
+
+/*# sourceMappingURL=/buttons.c7ddf0a5.css.map */

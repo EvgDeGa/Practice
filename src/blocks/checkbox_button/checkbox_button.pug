@@ -1,0 +1,9 @@
+mixin checkbox_button(name,list)
+    div.checkbox_button
+        p.checkbox_button_H= name
+        each i in list
+            div.checkbox
+                label.container
+                    p= i
+                    input(type="checkbox" name="check" placeholder=i)
+                    span.checkmark

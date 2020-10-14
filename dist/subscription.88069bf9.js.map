@@ -1,0 +1,1 @@
+{"version":3,"sources":["blocks/subscription/subscription.js"],"names":["subscription"],"mappings":";;;;;;;AAAA;;AAEO,SAASA,YAAT,GAAuB,CAAE","file":"subscription.88069bf9.js","sourceRoot":"..\\src","sourcesContent":["import './subscription.scss';\r\n\r\nexport function subscription(){}"]}

@@ -1,0 +1,1 @@
+{"version":3,"sources":["blocks/comment/comment.js"],"names":["comment"],"mappings":";;;;;;;AAAA;;AACO,SAASA,OAAT,GAAkB,CAAE","file":"comment.b15ee030.js","sourceRoot":"..\\src","sourcesContent":["import './comment.scss';\r\nexport function comment(){}\r\n"]}

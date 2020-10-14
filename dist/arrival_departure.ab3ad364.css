@@ -1,0 +1,80 @@
+li {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+@font-face {
+  font-family: "Quicksand-Regular";
+  src: url("/Quicksand-Regular.5734f72b.woff") format("woff");
+}
+@font-face {
+  font-family: "Montserrat-Regular";
+  src: url("/Montserrat-Regular.3879dd71.woff") format("woff");
+}
+@font-face {
+  font-family: "Montserrat-Bold";
+  src: url("/Montserrat-Bold.cf84ca58.woff") format("woff");
+}
+.arrive_departure {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 0;
+  width: 318px;
+}
+.arrive_departure .arrive,
+.arrive_departure .leave {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  position: relative;
+  margin-top: 0;
+  margin-right: 20px;
+  width: 150px;
+}
+.arrive_departure .arrive img,
+.arrive_departure .leave img {
+  position: absolute;
+  right: 16px;
+  bottom: 17px;
+}
+.arrive_departure .text_H {
+  font-family: Montserrat-Bold, sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 24px;
+  color: #1F2041;
+  text-transform: uppercase;
+  margin: 0 0 0 0;
+}
+.arrive_departure .enter_email {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  height: 44px;
+  width: 150px;
+  min-width: 150px;
+  padding: 0 14px;
+  border: 1px solid rgba(31, 32, 65, 0.25);
+  box-sizing: border-box;
+  border-radius: 4px;
+  outline: none;
+  font-family: Montserrat-Regular, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  color: rgba(31, 32, 65, 0.75);
+}
+.arrive_departure .enter_email::-moz-placeholder {
+  color: rgba(31, 32, 65, 0.25);
+}
+.arrive_departure .enter_email::-webkit-input-placeholder {
+  color: rgba(31, 32, 65, 0.25);
+}
+
+/*# sourceMappingURL=/arrival_departure.ab3ad364.css.map */

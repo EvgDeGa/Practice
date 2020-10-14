@@ -1,0 +1,1 @@
+{"version":3,"sources":["blocks/footer/footer.js"],"names":["footer"],"mappings":";;;;;;;AAAA;;AACO,SAASA,MAAT,GAAkB,CAAE","file":"footer.abceb7fe.js","sourceRoot":"..\\src","sourcesContent":["import './footer.scss';\r\nexport function footer() {}\r\n"]}

@@ -1,0 +1,49 @@
+li {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+@font-face {
+  font-family: "Quicksand-Regular";
+  src: url("/Quicksand-Regular.5734f72b.woff") format("woff");
+}
+@font-face {
+  font-family: "Montserrat-Regular";
+  src: url("/Montserrat-Regular.3879dd71.woff") format("woff");
+}
+@font-face {
+  font-family: "Montserrat-Bold";
+  src: url("/Montserrat-Bold.cf84ca58.woff") format("woff");
+}
+.border {
+  display: inline-block;
+  justify-content: center;
+  align-items: center;
+  width: auto;
+  height: 40px;
+  padding: 2px;
+  border-radius: 22px;
+  background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+}
+.border .fill {
+  display: inline-block;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.border p {
+  margin: 13px 20px;
+  font-family: Montserrat-Bold, sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 15px;
+  color: #fff;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+/*# sourceMappingURL=/buttons.95a5a906.css.map */

@@ -1,0 +1,104 @@
+li {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+@font-face {
+  font-family: "Open-Sans";
+  src: url("/OpenSans-Regular.369ed7ad.ttf") format("ttf");
+}
+@font-face {
+  font-family: "Quicksand-Regular";
+  src: url("/Quicksand-Regular.96adb757.woff") format("woff");
+}
+@font-face {
+  font-family: "Montserrat-Regular";
+  src: url("/Montserrat-Regular.d2b6be00.woff") format("woff");
+}
+@font-face {
+  font-family: "Montserrat-Bold";
+  src: url("/Montserrat-Bold.83c86f61.woff") format("woff");
+}
+.slider_container {
+  width: 266px;
+  margin: 50px 80px;
+}
+
+.slider {
+  position: relative;
+  background: #FFFFFF;
+  border: 1px solid rgba(31, 32, 65, 0.25);
+  box-sizing: border-box;
+  border-radius: 3px;
+  background: linear-gradient(left top, #E0E0E0, #EEEEEE);
+  width: 266px;
+  height: 6px;
+}
+
+.thumb {
+  width: 12px;
+  height: 12px;
+  position: absolute;
+  left: -1px;
+  top: -6px;
+  background: linear-gradient(180deg, #6FCF97 0%, #66D2EA 100%);
+  border: 2px solid #FFFFFF;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.thumb2 {
+  width: 12px;
+  height: 12px;
+  position: absolute;
+  right: -1px;
+  top: -6px;
+  background: linear-gradient(180deg, #6FCF97 0%, #66D2EA 100%);
+  border: 2px solid #FFFFFF;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.range {
+  top: -1;
+  width: 252px;
+  height: 6px;
+  position: absolute;
+  left: 6px;
+  background: linear-gradient(180deg, #6FCF97 0%, #66D2EA 100%);
+}
+
+.slider_price__container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.preview {
+  font-family: Montserrat-Bold, sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 15px;
+  color: #1F2041;
+  text-transform: uppercase;
+}
+
+.price_container {
+  display: flex;
+  flex-direction: row;
+}
+.price_container p {
+  font-family: Montserrat-Regular, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 15px;
+  color: rgba(31, 32, 65, 0.5);
+  text-transform: uppercase;
+}
+
+/*# sourceMappingURL=/range_slider.4bb890f7.css.map */

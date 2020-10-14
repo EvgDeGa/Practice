@@ -1,0 +1,38 @@
+mixin room(number_room, price,status)
+        - let days = 4
+        - status = status || ''
+        div.room
+            div.first_line
+                div.left_h
+                    p.tell_n №
+                    p.room__number_room=number_room
+                    p.room_status=status
+                div.right_h
+                    p.room_price= price  + "₽"
+                    p.room_price_per_day &#160в сутки
+            div.arr_lea_gue
+                block content
+                    include ../arrival_departure/ arrival_departure
+                    +arrival_departure()
+                block content
+                    include ../guest/guest
+                    +guest()
+            div.price
+                p= price + "₽ x " + days + ' суток'
+                p.first_c= price*days + "₽"
+            div.service
+                p Сбор за услуги: скидка 2 179₽
+                p.second_c 0₽
+            div.add_service
+                p Сбор за дополнительные услуги
+                p.third_c 300₽
+            div.total_price
+                p Итого
+                p.total_c 999
+            div.to_book
+                block content
+                    - let title = 'Забронировать'
+                    include ../fill_button/fill_button
+                    +fill_button(title)
+
+

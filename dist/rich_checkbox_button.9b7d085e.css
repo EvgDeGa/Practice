@@ -1,0 +1,99 @@
+li {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+@font-face {
+  font-family: "Open-Sans";
+  src: url("/OpenSans-Regular.369ed7ad.ttf") format("ttf");
+}
+@font-face {
+  font-family: "Quicksand-Regular";
+  src: url("/Quicksand-Regular.96adb757.woff") format("woff");
+}
+@font-face {
+  font-family: "Montserrat-Regular";
+  src: url("/Montserrat-Regular.d2b6be00.woff") format("woff");
+}
+@font-face {
+  font-family: "Montserrat-Bold";
+  src: url("/Montserrat-Bold.83c86f61.woff") format("woff");
+}
+.rich_checkbox_button {
+  position: relative;
+  width: 266px;
+  display: flex;
+  flex-direction: column;
+}
+.rich_checkbox_button * {
+  user-select: none;
+}
+.rich_checkbox_button .checkbox {
+  padding: 5px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+.rich_checkbox_button .container {
+  margin: 0 20px 0 0;
+  display: block;
+  position: relative;
+  padding: 1px 0 0 29px;
+  cursor: pointer;
+  font-family: Montserrat-Bold, sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 18px;
+  color: rgba(31, 32, 65, 0.75);
+}
+.rich_checkbox_button .container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+.rich_checkbox_button .container p {
+  margin: 6px 0 -1px 0;
+  font-family: Montserrat-Regular, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14px;
+  color: rgba(31, 32, 65, 0.75);
+}
+.rich_checkbox_button .checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 18px;
+  width: 18px;
+  background: #FFFFFF;
+  border: 1px solid rgba(31, 32, 65, 0.25);
+  border-radius: 4px;
+}
+.rich_checkbox_button .container input:checked ~ .checkmark {
+  border: 1px solid #BC9CFF;
+  background: white;
+}
+.rich_checkbox_button .checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+.rich_checkbox_button .container input:checked ~ .checkmark:after {
+  display: block;
+}
+.rich_checkbox_button .container .checkmark:after {
+  top: 5px;
+  left: 5px;
+  width: 6px;
+  height: 4px;
+  border-bottom: 2px solid #BC9CFF;
+  border-left: 2px solid #BC9CFF;
+  transform: rotate(-45deg);
+}
+
+/*# sourceMappingURL=/rich_checkbox_button.9b7d085e.css.map */

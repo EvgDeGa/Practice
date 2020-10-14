@@ -1,0 +1,10 @@
+mixin expandable_checkbox_list(name,list)
+    div.expandable_checkbox_list
+        p.expandable_checkbox_list_H= name
+        img.drop_down(src="/image/expand_more.svg")
+        div.drop
+            each i in list
+                div.checkbox
+                    label.container= i
+                        input(type="checkbox" name="check" placeholder=i)
+                        span.checkmark

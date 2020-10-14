@@ -1,0 +1,161 @@
+@import "src/mixin/mixin.scss";
+
+.footer_1 {
+  border-top: 1px solid rgba(31, 32, 65, 0.25);
+
+  .footer_cont {
+    max-width: 1160px;
+    margin: 100px auto 0 auto;
+
+  }
+
+  margin: 30px 0 0 0;
+
+
+  li {
+    list-style-type: none;
+  }
+
+
+  .first_line {
+    padding: 0;
+    margin: 0 auto;
+    height: 272px;
+    background-color: #FFFFFF;
+    max-width: 1440px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    //padding: 0;
+
+    li {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+
+      ul {
+        padding: 0;
+
+        li {
+          @include Font_Montserrat-Regular(14px, 16px, rgba(31, 32, 65, 0.5));
+
+          margin-top: 22px;
+          margin-right: 0;
+        }
+      }
+
+      p {
+        @include Font_Montserrat-Regular(14px, 24px, rgba(31, 32, 65, 0.75));
+
+
+        margin: 18px 0;
+      }
+
+      h3 {
+        @include Font_Montserrat-Bold(14px, 15px, rgba(31, 32, 65, 0.75));
+
+
+        text-transform: uppercase;
+
+        margin: 4px 0 0 0;
+      }
+    }
+
+  }
+
+  .first_line > li:nth-child(1) {
+    margin-right: 40px;
+  }
+
+  .first_line > li:nth-child(1),
+  .first_line > li:nth-child(5) {
+    width: 260px;
+
+  }
+
+  .first_line > li:nth-child(2),
+  .first_line > li:nth-child(3),
+  .first_line > li:nth-child(4) {
+    width: 200px;
+  }
+
+
+  .enter_email {
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    height: 44px;
+    width: 260px;
+    padding: 0 12px 0 14px;
+    margin-top: 5px;
+
+    border: 1px solid rgba(31, 32, 65, 0.25);
+    box-sizing: border-box;
+    border-radius: 4px;
+
+    input {
+      @include Font_Montserrat-Regular(14px, 24px, rgba(31, 32, 65, 0.25));
+
+      place-content: space-between;
+
+
+      height: 100%;
+      width: 100%;
+      padding: 0;
+
+      border: 0
+    }
+
+    img {
+      //margin-left: 5px;
+    }
+  }
+}
+  .footer_2{
+  .second_line {
+    background-color: #FFFFFF;
+
+
+
+    margin: 0;
+    border-top: 1px solid rgba(31, 32, 65, 0.25);
+    box-shadow: 0 10px 20px rgba(31, 32, 65, 0.05);
+  }
+
+  .container {
+    background-color: #FFFFFF;
+    max-width: 1160px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    height: 70px;
+
+
+    p {
+      @include Font_Montserrat-Regular( 14px, 17px, rgba(31, 32, 65, 0.75));
+
+
+      color: rgba(31, 32, 65, 0.75);
+    }
+
+
+    div {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+
+      img {
+        height: 24px;
+        width: 24px;
+        margin-left: 20px;
+      }
+    }
+  }
+}

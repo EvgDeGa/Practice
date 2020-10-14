@@ -1,0 +1,103 @@
+@import "src/mixin/mixin.scss";
+
+.filling_room_container{
+  margin-top: 30px;
+  *{
+    user-select: none;
+  }
+  .filling_room {
+    position: relative;
+    margin-top: 20px;
+    max-width: 266px;
+    min-width: 200px;
+
+    .filling_room_text {
+      margin: 0;
+      text-align: left;
+      @include enter_email(266px);
+      @include Font_Montserrat-Regular(14px, 20px, rgba(31, 32, 65, 0.25));
+    }
+
+    img {
+      position: absolute;
+      right: 16px;
+      top: 37px
+    }
+
+    h3 {
+      @include Font_Montserrat-Bold(12px, 15px, #1F2041);
+      text-transform: uppercase;
+
+      margin: 0 0 4px 0;
+
+    }
+
+
+  }
+
+  .room_list{
+    max-width: 264px;
+    min-width: 198px;
+    display: none;
+    padding: 0 0 7px 0;
+    margin: 0;
+    border: 1px solid rgba(31, 32, 65, 0.5);
+    border-radius: 4px;
+    //box-shadow: 0 10px 20px rgba(31, 32, 65, 0.05);
+
+    border-top: 0;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+
+    li {
+      padding: 6px 6px 1px 14px;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      //margin-bottom: 1px;
+    }
+
+    .holder {
+      @include Font_Montserrat-Bold(12px, 17px, #1F2041);
+      margin: 0;
+      text-transform: uppercase;
+      margin-bottom: 2px;
+    }
+
+    .picker {
+      display: flex;
+      flex-direction: row;
+
+      p {
+        display: flex;
+        justify-content: center;
+        height: 100%;
+        margin: 0;
+        align-items: center;
+        text-align: center;
+
+      }
+
+      .room_number {
+        @include Font_Montserrat-Bold(12px, 15px, #1F2041);
+
+        width: 32px;
+        height: 28px;
+      }
+
+      .room_minus,
+      .room_plus {
+        border: 1px solid rgba(31, 32, 65, 0.25);
+        border-radius: 22px;
+        @include Font_Montserrat-Regular(18px, 22px, rgba(31, 32, 65, 0.5));
+
+        width: 28px;
+        height: 28px;
+      }
+    }
+
+
+
+  }
+}

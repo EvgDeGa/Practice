@@ -1,0 +1,105 @@
+@import "src/mixin/mixin.scss";
+
+.expandable_checkbox_list{
+  margin-top: 30px;
+  position: relative;
+  width: 266px;
+  display: flex;
+  flex-direction: column;
+
+  *{
+    user-select: none;
+  }
+
+  .drop{
+    display: none;
+  }
+  .expandable_checkbox_list_H{
+    margin: 0;
+    @include Font_Montserrat-Bold(12px,15px,#1F2041);
+    text-transform: uppercase;
+
+  }
+  p{
+    @include Font_Montserrat-Bold(12px,15px,#1F2041);
+    text-transform: uppercase;}
+
+  img {
+    position: absolute;
+    right: 16px;
+    top: 4px
+  }
+
+  .checkbox {
+    padding: 5px 0 ;
+    height: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+
+
+  }
+
+  .container {
+
+    display: block;
+    position: relative;
+    padding-left: 30px;
+    margin-right: 20px;
+    cursor: pointer;
+
+    @include Font_Montserrat-Regular(14px, 20px, rgba(31, 32, 65, 0.75));
+
+    input {
+      position: absolute;
+
+      opacity: 0;
+      cursor: pointer;
+    }
+  }
+
+  .checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 18px;
+    width: 18px;
+    background: #FFFFFF;
+
+    border: 1px solid rgba(31, 32, 65, 0.25);
+    border-radius: 4px;
+  }
+
+  .container input:checked ~ .checkmark {
+    border: 1px solid #BC9CFF;
+    background: white;
+  }
+
+  .checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+  }
+
+  .container input:checked ~ .checkmark:after {
+    display: block;
+  }
+
+  .container .checkmark:after {
+    top: 5px;
+    left: 5px;
+    width: 6px;
+    height: 4px;
+    border-bottom: 2px solid #BC9CFF;
+    border-left: 2px solid #BC9CFF;
+    transform: rotate(-45deg);
+
+  }
+  .checkbox:last-child{
+    padding-bottom: 0;
+  }
+
+
+}
+
+

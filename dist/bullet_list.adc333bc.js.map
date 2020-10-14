@@ -1,0 +1,1 @@
+{"version":3,"sources":["blocks/bullet_list/bullet_list.js"],"names":["bullet_list"],"mappings":";;;;;;;AAAA;;AACO,SAASA,WAAT,GAAsB,CAAE","file":"bullet_list.adc333bc.js","sourceRoot":"..\\src","sourcesContent":["import './bullet_list.scss';\r\nexport function bullet_list(){}\r\n\r\n"]}

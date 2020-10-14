@@ -1,0 +1,143 @@
+@import "src/mixin/mixin.scss";
+
+%left_right{
+  position: absolute;
+  top: 0;
+
+  width: 42px;
+  height: 151px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+%second_first{
+  position: absolute;
+  top: 0;
+  width: 42px;
+  height: 151px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.room_preview {
+
+  *{user-select: none}
+
+
+  width: 270px;
+  height: 257px;
+  box-shadow: 0 10px 20px rgba(31, 32, 65, 0.05);
+  border-radius: 4px;
+  background-color: #FFFFFF;
+  margin: 21px 0 0 12px ;
+
+  .room_slider {
+    width: 270px;
+    height: 151px;
+    //display: flex;
+    //flex-direction: row;
+    //justify-content: space-between;
+
+    position: relative;
+
+    background-color: #1F2041;
+
+    .image {
+      img {
+        border-top-right-radius: 4px;
+        border-top-left-radius: 4px;
+
+
+        width: 270px;
+        height: 151px;
+      }
+    }
+
+    .left {
+      left: 0;
+
+      @extend %left_right
+    }
+
+    .right {
+      right: 0;
+      @extend %left_right
+    }
+
+    .el {
+      position: absolute;
+      bottom: 4px;
+      right: 14px;
+      display: flex;
+      flex-direction: row;
+
+      svg {
+        margin-left: 1px;
+      }
+    }
+
+  }
+
+
+  .first_line, .second_line {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+
+    div {
+      display: flex;
+      flex-direction: row;
+
+      p {
+        margin: 0;
+        //border: 1px solid red;
+      }
+    }
+  }
+
+.first_line{
+    .apar{
+      @include Font_QuickSand(14px, 900, 17px, #1F2041);
+    }
+    .apar_status{
+      @include Font_Montserrat-Bold(12px,  17px, #BC9CFF);
+      margin-left: 5px;
+      text-transform: uppercase;
+    }
+    .price{
+      @include Font_Montserrat-Bold(14px,  14px, rgba(31, 32, 65, 0.5));
+    }
+    .per_day{
+      @include Font_Montserrat-Regular(12px, 16px, rgba(31, 32, 65, 0.5));
+    }
+  }
+
+  .second_line{
+    .rev_num{
+      @include Font_Montserrat-Bold(14px,  21px, rgba(31, 32, 65, 0.5));
+    }
+    .rev{
+      @include Font_Montserrat-Regular(14px,  22px, rgba(31, 32, 65, 0.5));
+    }
+  }
+
+  .information{
+    display: flex;
+    flex-direction: column;
+    margin: 26px  20px 0 20px;
+  }
+
+
+  .line{
+
+    margin: 11px 0 10px 0;
+    width: 230px;
+    height: 1px;
+
+    background: rgba(31, 32, 65, 0.1);
+  }
+
+}

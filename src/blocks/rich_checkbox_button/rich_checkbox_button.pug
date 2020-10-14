@@ -1,0 +1,18 @@
+
+
+mixin rich_checkbox_button(name,list,list_op)
+    div.rich_checkbox_button
+        p.rich_checkbox_button_H= name
+        each i,j in list
+            div.checkbox
+                label.container= i
+                    input(type="checkbox" name="check" placeholder=i)
+                    span.checkmark
+                    p=list_op[j]
+
+
+
+
+
+//
+//+rich_checkbox_button(["Широкий коридор",'Помощник для инвалидов', "sss"],["Ширина коридоров в номере не менее 91 см.","На 1 этаже вас встретит специалист  и проводит до номера.","sjdf"])

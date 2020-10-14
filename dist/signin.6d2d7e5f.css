@@ -1,0 +1,131 @@
+li {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+@font-face {
+  font-family: "Quicksand-Regular";
+  src: url("/Quicksand-Regular.5734f72b.woff") format("woff");
+}
+@font-face {
+  font-family: "Montserrat-Regular";
+  src: url("/Montserrat-Regular.3879dd71.woff") format("woff");
+}
+@font-face {
+  font-family: "Montserrat-Bold";
+  src: url("/Montserrat-Bold.cf84ca58.woff") format("woff");
+}
+.sign_in_container {
+  width: 320px;
+  height: 316px;
+  padding: 40px 29px 0 29px;
+  border: 1px solid rgba(0, 0, 0, 0.12);
+  border-radius: 4px;
+  box-shadow: 0 0 25px rgba(0, 0, 0, 0.2);
+  background: white;
+}
+.sign_in_container h2 {
+  font-family: Open-Sans, sans-serif;
+  line-height: 30px;
+  margin: 0;
+}
+.sign_in_container .mail_container {
+  margin-top: 19px;
+  margin-bottom: 8.44px;
+}
+.sign_in_container .enter_email {
+  font-family: Montserrat-Regular, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  color: rgba(31, 0, 0, 0.25);
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  height: 44px;
+  width: 320px;
+  padding: 0 14px;
+  border: 1px solid rgba(31, 32, 65, 0.25);
+  box-sizing: border-box;
+  border-radius: 4px;
+  margin-top: 5px;
+  margin-bottom: 10px;
+}
+.sign_in_container .confirm {
+  font-family: Montserrat-Bold, sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 15px;
+  color: white;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  text-align: center;
+  text-transform: uppercase;
+  width: 320px;
+  height: 44px;
+  padding-left: 42px;
+  margin-top: 20px;
+  margin-bottom: 30px;
+  border: 0;
+  border-radius: 22px;
+  background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+}
+.sign_in_container .confirm img {
+  height: 16px;
+  width: 16px;
+  margin-left: 12px;
+}
+.sign_in_container .confirm p {
+  width: 236px;
+}
+.sign_in_container .have_account {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.sign_in_container .have_account p {
+  font-family: Montserrat-Regular, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  color: #000000;
+  display: flex;
+  align-items: center;
+}
+.sign_in_container .border_input {
+  padding: 2px;
+  height: 40px;
+  width: 95px;
+  background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+  border-radius: 22px;
+}
+.sign_in_container .background_input {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+  border-radius: 22px;
+  background: white;
+}
+.sign_in_container .background_input p {
+  margin: 0;
+  font-family: Montserrat-Bold, sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 18px;
+  color: #BC9CFF;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+/*# sourceMappingURL=/signin.6d2d7e5f.css.map */

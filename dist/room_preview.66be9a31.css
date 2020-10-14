@@ -1,0 +1,152 @@
+li {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+@font-face {
+  font-family: "Open-Sans";
+  src: url("/OpenSans-Regular.369ed7ad.ttf") format("ttf");
+}
+@font-face {
+  font-family: "Quicksand-Regular";
+  src: url("/Quicksand-Regular.96adb757.woff") format("woff");
+}
+@font-face {
+  font-family: "Montserrat-Regular";
+  src: url("/Montserrat-Regular.d2b6be00.woff") format("woff");
+}
+@font-face {
+  font-family: "Montserrat-Bold";
+  src: url("/Montserrat-Bold.83c86f61.woff") format("woff");
+}
+.room_preview .slider .right, .room_preview .slider .left {
+  position: absolute;
+  top: 0;
+  width: 42px;
+  height: 151px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.room_preview {
+  width: 270px;
+  height: 257px;
+  box-shadow: 0 10px 20px rgba(31, 32, 65, 0.05);
+  border-radius: 4px;
+  background-color: #FFFFFF;
+  margin: 10px;
+}
+.room_preview * {
+  user-select: none;
+}
+.room_preview .slider {
+  width: 270px;
+  height: 151px;
+  position: relative;
+  background-color: #1F2041;
+}
+.room_preview .slider .image img {
+  border-top-right-radius: 4px;
+  border-top-left-radius: 4px;
+  width: 270px;
+  height: 151px;
+}
+.room_preview .slider .left {
+  left: 0;
+}
+.room_preview .slider .right {
+  right: 0;
+}
+.room_preview .slider .el {
+  position: absolute;
+  bottom: 4px;
+  right: 14px;
+  display: flex;
+  flex-direction: row;
+}
+.room_preview .slider .el svg {
+  margin-left: 1px;
+}
+.room_preview .first_line, .room_preview .second_line {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.room_preview .first_line div, .room_preview .second_line div {
+  display: flex;
+  flex-direction: row;
+}
+.room_preview .first_line div p, .room_preview .second_line div p {
+  margin: 0;
+}
+.room_preview .first_line .apar {
+  font-family: Quicksand-Regular, sans-serif;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 14px;
+  line-height: 17px;
+  color: #1F2041;
+  letter-spacing: 2px;
+}
+.room_preview .first_line .apar_status {
+  font-family: Montserrat-Bold, sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 17px;
+  color: #BC9CFF;
+  margin-left: 5px;
+  text-transform: uppercase;
+}
+.room_preview .first_line .price {
+  font-family: Montserrat-Bold, sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 14px;
+  color: rgba(31, 32, 65, 0.5);
+}
+.room_preview .first_line .per_day {
+  font-family: Montserrat-Regular, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+  color: rgba(31, 32, 65, 0.5);
+}
+.room_preview .second_line .rev_num {
+  font-family: Montserrat-Bold, sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 21px;
+  color: rgba(31, 32, 65, 0.5);
+}
+.room_preview .second_line .rev {
+  font-family: Montserrat-Regular, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 22px;
+  color: rgba(31, 32, 65, 0.5);
+}
+.room_preview .information {
+  display: flex;
+  flex-direction: column;
+  margin: 26px 20px 0 20px;
+}
+.room_preview .line {
+  margin: 11px 0 10px 0;
+  width: 230px;
+  height: 1px;
+  background: rgba(31, 32, 65, 0.1);
+}
+.rate_button .star {
+  margin: 0 1px 0 2px;
+}
+
+/*# sourceMappingURL=/room_preview.66be9a31.css.map */

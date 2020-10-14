@@ -1,0 +1,314 @@
+li {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+@font-face {
+  font-family: "Quicksand-Regular";
+  src: url("/Quicksand-Regular.5734f72b.woff") format("woff");
+}
+@font-face {
+  font-family: "Montserrat-Regular";
+  src: url("/Montserrat-Regular.3879dd71.woff") format("woff");
+}
+@font-face {
+  font-family: "Montserrat-Bold";
+  src: url("/Montserrat-Bold.cf84ca58.woff") format("woff");
+}
+.log_in_container {
+  width: 320px;
+  height: 604px;
+  padding: 40px 29px 0 29px;
+  border: 1px solid rgba(0, 0, 0, 0.12);
+  border-radius: 4px;
+  box-shadow: 0 0 25px rgba(0, 0, 0, 0.2);
+  background: white;
+}
+.log_in_container .text_h {
+  font-family: Quicksand-Regular, sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 30px;
+  color: #1F2041;
+  letter-spacing: 2px;
+  margin: 0;
+}
+.log_in_container .mail_container {
+  margin-top: 19px;
+  margin-bottom: 8.44px;
+}
+.log_in_container .radio_container {
+  margin-top: 3px;
+  height: 24px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+.log_in_container .container {
+  display: block;
+  position: relative;
+  padding-left: 30px;
+  margin-right: 20px;
+  cursor: pointer;
+  font-family: Montserrat-Regular, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  color: rgba(31, 32, 65, 0.75);
+}
+.log_in_container .container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+.log_in_container .checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 18px;
+  width: 18px;
+  background: #FFFFFF;
+  border: 1px solid rgba(31, 32, 65, 0.25);
+  border-radius: 50%;
+}
+.log_in_container .container input:checked ~ .checkmark {
+  border: 1px solid #BC9CFF;
+  background: white;
+}
+.log_in_container .checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+.log_in_container .container input:checked ~ .checkmark:after {
+  display: block;
+}
+.log_in_container .container .checkmark:after {
+  top: 3px;
+  left: 3px;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+}
+.log_in_container .arrive {
+  margin-top: 20px;
+}
+.log_in_container .arrive h3 {
+  font-family: Montserrat-Bold, sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 15px;
+  color: #1F2041;
+  text-transform: uppercase;
+  margin: 0;
+}
+.log_in_container .date {
+  display: flex;
+  flex-direction: column;
+  margin-top: 15px;
+}
+.log_in_container .date .arrive, .log_in_container .date .leave {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.log_in_container .confirm {
+  font-family: Montserrat-Bold, sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 15px;
+  color: white;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  text-align: center;
+  text-transform: uppercase;
+  width: 320px;
+  height: 44px;
+  padding-left: 42px;
+  margin-top: 20px;
+  margin-bottom: 30px;
+  border: 0;
+  border-radius: 22px;
+  background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+}
+.log_in_container .confirm img {
+  height: 16px;
+  width: 16px;
+  margin-left: 12px;
+}
+.log_in_container .confirm p {
+  width: 236px;
+}
+.log_in_container .swap {
+  top: 0;
+  position: relative;
+}
+.log_in_container .container_checkbox {
+  display: block;
+  position: relative;
+  padding-left: 50px;
+  margin-right: 20px;
+  cursor: pointer;
+  font-family: Montserrat-Regular, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  color: rgba(31, 32, 65, 0.75);
+}
+.log_in_container .container_checkbox input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+.log_in_container .swap {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 18px;
+  width: 38px;
+  background: #FFFFFF;
+  border: 1px solid rgba(31, 32, 65, 0.25);
+  border-radius: 10px;
+}
+.log_in_container .container_checkbox input:checked ~ .swap {
+  border: 1px solid #BC9CFF;
+  background: white;
+}
+.log_in_container .swap:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+.log_in_container .container_checkbox input:checked ~ .swap:after {
+  display: block;
+  margin-left: 20px;
+  background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+}
+.log_in_container .container_checkbox .swap:after {
+  display: block;
+  top: 3px;
+  left: 3px;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: rgba(31, 32, 65, 0.25);
+}
+.log_in_container h3 {
+  font-family: Montserrat-Bold, sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 15px;
+  color: #1F2041;
+  text-transform: uppercase;
+  margin: 0;
+}
+.log_in_container .have_account {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.log_in_container .have_account p {
+  font-family: Montserrat-Regular, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  color: #000000;
+  display: flex;
+  align-items: center;
+}
+.log_in_container .border_input {
+  padding: 2px;
+  height: 40px;
+  width: 95px;
+  background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+  border-radius: 22px;
+}
+.log_in_container .background_input {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+  border-radius: 22px;
+  background: white;
+}
+.log_in_container .background_input p {
+  margin: 0;
+  font-family: Montserrat-Bold, sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 18px;
+  color: #BC9CFF;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.log_in_container .enter_email {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 320px;
+  height: 44px;
+  padding: 0 14px;
+  border: 1px solid rgba(31, 32, 65, 0.25);
+  box-sizing: border-box;
+  border-radius: 4px;
+  margin-bottom: 10px;
+  outline: none;
+}
+.log_in_container .text_h3 {
+  font-family: Montserrat-Bold, sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 15px;
+  color: #1F2041;
+  text-transform: uppercase;
+  margin: 0 0 5px 0;
+}
+
+.room_preview.room_slider.left {
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 42px;
+  height: 151px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.room_preview.room_slider.right {
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 42px;
+  height: 151px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.room_preview.room_slider.rev_num {
+  font-family: Montserrat-Bold, sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 21px;
+  color: rgba(31, 32, 65, 0.5);
+}
+
+/*# sourceMappingURL=/login.ad36be04.css.map */

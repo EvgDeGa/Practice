@@ -1,0 +1,8 @@
+
+
+mixin radio_button(name)
+    div.radio_button
+        each i in name
+            label.container= i
+                input(type='radio' name='radio' value=i)
+                span.checkmark

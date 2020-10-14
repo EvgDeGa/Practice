@@ -1,0 +1,47 @@
+li {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+@font-face {
+  font-family: "Quicksand-Regular";
+  src: url("/Quicksand-Regular.5734f72b.woff") format("woff");
+}
+@font-face {
+  font-family: "Montserrat-Regular";
+  src: url("/Montserrat-Regular.3879dd71.woff") format("woff");
+}
+@font-face {
+  font-family: "Montserrat-Bold";
+  src: url("/Montserrat-Bold.cf84ca58.woff") format("woff");
+}
+.text_field .enter_email {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  height: 44px;
+  width: 320px;
+  min-width: 150px;
+  padding: 0 14px;
+  border: 1px solid rgba(31, 32, 65, 0.25);
+  box-sizing: border-box;
+  border-radius: 4px;
+  outline: none;
+  font-family: Montserrat-Regular, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  color: rgba(31, 32, 65, 0.75);
+}
+.text_field .enter_email::-moz-placeholder {
+  color: rgba(31, 32, 65, 0.25);
+}
+.text_field .enter_email::-webkit-input-placeholder {
+  color: rgba(31, 32, 65, 0.25);
+}
+
+/*# sourceMappingURL=/text_field.9fb2e290.css.map */

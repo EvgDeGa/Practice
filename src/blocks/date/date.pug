@@ -1,0 +1,22 @@
+mixin date()
+    body
+        div.date
+            div.month_year
+                img.back(id="date_back" src="/image/arrow_back_purple.svg" )
+                p(id='month') Месяц
+                img.forward(id="date_forward" src="/image/arrow_forward_purple.svg")
+            div.week_day
+                ul
+                    li Пн
+                    li Вт
+                    li Ср
+                    li Чт
+                    li Пт
+                    li Сб
+                    li Вс
+            div.number
+            div.buttons
+                p(style='color: rgba(31, 32, 65, 0.5);' id='clear') Очитстить
+                P(style='color: #BC9CFF;') Применить
+
+

@@ -1,0 +1,1 @@
+{"version":3,"sources":["blocks/rich_checkbox_button/rich_checkbox_button.js"],"names":["rich_checkbox_button"],"mappings":";;;;;;;AAAA;;AAGO,SAASA,oBAAT,GAAgC,CAEtC","file":"rich_checkbox_button.4652426b.js","sourceRoot":"..\\src","sourcesContent":["import './rich_checkbox_button.scss';\r\n\r\n\r\nexport function rich_checkbox_button() {\r\n\r\n}"]}

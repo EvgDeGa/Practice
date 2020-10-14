@@ -1,0 +1,1 @@
+{"version":3,"sources":["blocks/arrival_departure/arrival_departure.js"],"names":["arrival_departure"],"mappings":";;;;;;;AAAA;;AAEO,SAASA,iBAAT,GAA4B,CAElC","file":"arrival_departure.ab3ad364.js","sourceRoot":"..\\src","sourcesContent":["import './ arrival_departure.scss';\r\n\r\nexport function arrival_departure(){\r\n\r\n}\r\n"]}

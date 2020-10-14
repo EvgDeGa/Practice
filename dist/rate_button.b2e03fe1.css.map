@@ -1,0 +1,1 @@
+{"version":3,"sources":["rate_button\\rate_button.scss"],"names":[],"mappings":"AACE;EACE","file":"rate_button.b2e03fe1.css","sourceRoot":"..\\src","sourcesContent":[".rate_button {\r\n  .star {\r\n    margin: 0 1px 0 2px;\r\n  }\r\n}"]}

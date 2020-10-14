@@ -1,0 +1,1 @@
+{"version":3,"sources":["blocks/pagination/pagination.js"],"names":["pagination"],"mappings":";;;;;;;AAAA;;AAEO,SAASA,UAAT,GAAqB,CAAE","file":"pagination.6c16b434.js","sourceRoot":"..\\src","sourcesContent":["import './pagination.scss';\r\n\r\nexport function pagination(){}\r\n"]}

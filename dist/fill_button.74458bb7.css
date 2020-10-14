@@ -1,0 +1,38 @@
+@font-face {
+  font-family: "Open-Sans";
+  src: url("/OpenSans-Regular.369ed7ad.ttf") format("ttf");
+}
+@font-face {
+  font-family: "Montserrat-Regular";
+  src: url("/Montserrat-Regular.d2b6be00.woff") format("woff");
+}
+.fill_button .confirm {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  font-family: Montserrat-Regular, sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 15px;
+  color: white;
+  text-align: center;
+  text-transform: uppercase;
+  width: 320px;
+  height: 44px;
+  padding-left: 42px;
+  border: 0;
+  border-radius: 22px;
+  background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+  outline: none;
+}
+.fill_button .confirm > img {
+  height: 16px;
+  width: 16px;
+  margin-left: 10px;
+}
+.fill_button .confirm > p {
+  width: 236px;
+}
+
+/*# sourceMappingURL=/fill_button.74458bb7.css.map */

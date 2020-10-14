@@ -1,0 +1,22 @@
+
+mixin header()
+    - reg = "Зарегестрирваться"
+    - sog = "Соглашения"
+    - mas = ['О нас', 'Услуги', 'Вакансии', 'Новости', 'Соглашения', 'Войти', 'Зарегестрирваться']
+    body
+        div.header
+            div.header_cont
+                img(src="/image/Logo.svg")
+                ul.class
+                    each val in mas
+                        if( val === mas[5])
+                            li.sing_in: a(href="")= val
+                        else if(val === reg)
+                            li.log_in: a(href="")= val
+                        else if(val === mas[1])||((val === sog))
+                            div.container
+                                li.drop_down= val
+                                ul
+                                    li sdfsdfd
+                        else
+                            li: a(href="")= val

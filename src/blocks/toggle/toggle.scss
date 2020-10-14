@@ -1,0 +1,69 @@
+@import "src/mixin/mixin.scss";
+.toggle {
+
+    margin-top: 3px;
+    height: 24px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+
+  .swap {
+    top: 0;
+    position: relative;
+  }
+
+  .container_checkbox {
+    display: block;
+    position: relative;
+    padding-left: 50px;
+    margin-right: 20px;
+    cursor: pointer;
+
+    @include Font_Montserrat-Regular(14px, 20px, rgba(31, 32, 65, 0.75));
+
+    input {
+      position: absolute;
+      opacity: 0;
+      cursor: pointer;
+    }
+  }
+
+  .swap {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 18px;
+    width: 38px;
+    background: #FFFFFF;
+
+    border: 1px solid rgba(31, 32, 65, 0.25);
+    border-radius: 10px;
+  }
+
+  .container_checkbox input:checked ~ .swap {
+    border: 1px solid #BC9CFF;
+    background: white;
+  }
+
+  .swap:after {
+    content: "";
+    position: absolute;
+    display: none;
+  }
+
+  .container_checkbox input:checked ~ .swap:after {
+    display: block;
+    margin-left: 20px;
+    background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+  }
+
+  .container_checkbox .swap:after {
+    display: block;
+    top: 3px;
+    left: 3px;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: rgba(31, 32, 65, 0.25);
+  }
+}

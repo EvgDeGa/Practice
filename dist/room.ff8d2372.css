@@ -1,0 +1,138 @@
+li {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+@font-face {
+  font-family: "Quicksand-Regular";
+  src: url("/Quicksand-Regular.5734f72b.woff") format("woff");
+}
+@font-face {
+  font-family: "Montserrat-Regular";
+  src: url("/Montserrat-Regular.3879dd71.woff") format("woff");
+}
+@font-face {
+  font-family: "Montserrat-Bold";
+  src: url("/Montserrat-Bold.cf84ca58.woff") format("woff");
+}
+.room .total_price, .room .add_service, .room .service, .room .price, .room .first_line,
+.room .right_h,
+.room .left_h {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.room .add_service, .room .service, .room .price {
+  font-family: Montserrat-Regular, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  color: rgba(31, 32, 65, 0.75);
+}
+.room .add_service p:nth-child(1), .room .service p:nth-child(1), .room .price p:nth-child(1) {
+  width: 214px;
+}
+
+.room {
+  border: 1px solid rgba(0, 0, 0, 0.12);
+  box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+  background: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding: 39px 29px 29px 29px;
+  width: 320px;
+}
+.room .price {
+  margin: 18px 0 0 1px;
+}
+.room .price p {
+  margin: 0;
+}
+.room .service {
+  margin: 10px 0 0 1px;
+}
+.room .service p {
+  margin: 0;
+}
+.room .add_service {
+  line-height: 18px;
+  margin: 14px 0 0 1px;
+}
+.room .add_service p {
+  margin: 0;
+}
+.room .total_price {
+  margin: 10px 0 0 1px;
+  font-family: Quicksand-Regular, sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 19px;
+  line-height: 24px;
+  color: #1F2041;
+  letter-spacing: 2px;
+  font-family: Open-Sans, sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 19px;
+  line-height: 24px;
+  /* identical to box height */
+  /* Dark 100% */
+  color: #1F2041;
+}
+.room .room_status {
+  font-family: Montserrat-Bold, sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 17px;
+  color: #BC9CFF;
+  margin-left: 5px;
+  text-transform: uppercase;
+}
+.room .room__number_room {
+  font-family: Quicksand-Regular, sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 30px;
+  color: #1F2041;
+  letter-spacing: 2px;
+  margin: 0 0 16px 0;
+}
+.room .room_price {
+  font-family: Montserrat-Bold, sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 18px;
+  color: rgba(31, 32, 65, 0.5);
+  margin-top: 10px;
+}
+.room .room_price_per_day {
+  font-family: Montserrat-Regular, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 18px;
+  color: rgba(31, 32, 65, 0.5);
+  margin-top: 10px;
+}
+.room .tell_n {
+  font-family: Quicksand-Regular, sans-serif;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 14px;
+  line-height: 17px;
+  color: #1F2041;
+  letter-spacing: 2px;
+  margin-top: 10px;
+}
+
+/*# sourceMappingURL=/room.ff8d2372.css.map */
